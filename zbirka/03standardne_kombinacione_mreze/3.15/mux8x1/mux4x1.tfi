@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+mux4x1 instance_name (
+    .iD(iD), 
+    .iSel(iSel), 
+    .oY(oY)
+    );
+
+

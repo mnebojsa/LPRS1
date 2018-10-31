@@ -1,0 +1,62 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml mux8x1.twx mux8x1.ncd -o mux8x1.twr mux8x1.pcf
+
+Design file:              mux8x1.ncd
+Physical constraint file: mux8x1.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+iD<0>          |oY             |    8.142|
+iD<1>          |oY             |    8.237|
+iD<2>          |oY             |    8.720|
+iD<3>          |oY             |    8.837|
+iD<4>          |oY             |    8.972|
+iD<5>          |oY             |    8.964|
+iD<6>          |oY             |    8.727|
+iD<7>          |oY             |    9.155|
+iSel<0>        |oY             |    9.036|
+iSel<1>        |oY             |    8.808|
+iSel<2>        |oY             |    8.411|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 31 10:03:48 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 207 MB
+
+
+

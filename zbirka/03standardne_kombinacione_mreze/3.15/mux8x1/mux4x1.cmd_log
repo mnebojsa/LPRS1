@@ -1,0 +1,2 @@
+vhdtdtfi -prj mux8x1 -o D:/LPRS1_git/LPRS1/zbirka/Standardne_kombinacione_mreze03/3.15/mux8x1/mux4x1.tfi -module mux4x1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work mux4x1.vhd 
+vhdtdtfi -prj mux8x1 -o D:/LPRS1_git/LPRS1/zbirka/Standardne_kombinacione_mreze03/3.15/mux8x1/mux4x1.vhi -module mux4x1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux4x1.vhd 
