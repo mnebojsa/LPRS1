@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/04automati/4.2/state_mchn_4_2/sm_4_2_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/04automati/4.2/state_mchn_4_2/sm_4_2_tb_beh.prj" "work.sm_4_2_tb" 

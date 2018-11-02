@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\LPRS1_git\LPRS1\zbirka\04automati\4.2\state_mchn_4_2\sm_4_2.ncd
+OUTFILE=D:\LPRS1_git\LPRS1\zbirka\04automati\4.2\state_mchn_4_2\sm_4_2.bit
+FAMILY=Spartan6
+PART=xc6slx4-2tqg144
+WORKINGDIR=D:\LPRS1_git\LPRS1\zbirka\04automati\4.2\state_mchn_4_2
+LICENSE=ISE
+USER_INFO=209858334_178080923_210593072_268

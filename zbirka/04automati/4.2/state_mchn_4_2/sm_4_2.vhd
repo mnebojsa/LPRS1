@@ -63,6 +63,12 @@ set_next_state:
 				else
 				    stateNext <= S2; 
             end if;
+        elsif(stateCurrent = S3) then
+		      if(iX = '0') then
+				    stateNext <= S1;
+				else
+				    stateNext <= S2; 
+            end if;				
         else
 		      if(iX = '0') then
 				    stateNext <= S3;
