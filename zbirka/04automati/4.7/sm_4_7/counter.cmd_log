@@ -1,0 +1,1 @@
+vhdtdtfi -prj sm_4_7 -o D:/LPRS1_git/LPRS1/zbirka/04automati/4.7/sm_4_7/counter.vhi -module counter -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter.vhd 

@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/Standardne_kombinacione_mreze03/3.13/dec3x8/dec3x8.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/03standardne_kombinacione_mreze/3.13/dec3x8/dec3x8_tb.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

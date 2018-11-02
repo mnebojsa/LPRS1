@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">G1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">sm_4_7</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">G2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">sm_4_7</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">vCount_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">counter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;oCnt_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">vCount_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">counter</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;oCnt_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_fsm/S_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sm_4_7</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Inst_fsm/S_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sm_4_7</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_fsm/Inst_counter/vCount_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sm_4_7</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Inst_fsm/Inst_counter/vCount_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sm_4_7</arg>&gt;.
+</msg>
+
+</messages>
+

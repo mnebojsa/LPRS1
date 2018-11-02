@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-01T11:58:51</DateModified>
+  <DateModified>2018-11-02T09:10:06</DateModified>
   <ModuleName>sm_4_5</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/LPRS1_git/LPRS1/zbirka/04automati/4.5/sm_4.5/iseconfig/sm_4_5.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/LPRS1_git/LPRS1/zbirka/04automati/4.5/sm_4.5</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/LPRS1_git/LPRS1/zbirka/04automati/4.5/sm_4.5\</ImplementationReportsDirectory>
   <DateInitialized>2018-11-01T11:58:51</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

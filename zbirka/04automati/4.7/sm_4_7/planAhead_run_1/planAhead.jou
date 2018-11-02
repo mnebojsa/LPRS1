@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Nov 01 18:48:31 2018
+# Process ID: 6140
+# Log file: D:/LPRS1_git/LPRS1/zbirka/04automati/4.7/sm_4_7/planAhead_run_1/planAhead.log
+# Journal file: D:/LPRS1_git/LPRS1/zbirka/04automati/4.7/sm_4_7/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/LPRS1_git/LPRS1/zbirka/04automati/4.7/sm_4_7/pa.fromNetlist.tcl
