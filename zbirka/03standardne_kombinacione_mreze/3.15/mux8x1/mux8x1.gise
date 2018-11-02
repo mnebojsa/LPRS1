@@ -28,16 +28,25 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux2x1.prj"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="mux2x1.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux2x1.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mux2x1.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="mux2x1.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux2x1_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux4x1.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux4x1.stx"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="mux4x1.tfi"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="mux4x1.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="mux4x1.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux4x1_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux4x1_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="mux4x1_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux4x1_tb_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mux8x1.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mux8x1.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mux8x1.lso"/>
@@ -70,14 +79,70 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux8x1_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="mux8x1_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="mux8x1_summary.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux8x1_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux8x1_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="mux8x1_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux8x1_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1541166236" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1541166236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1541166236" xil_pn:in_ck="9120899906047523565" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1541166236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="mux2x1.vhd"/>
+      <outfile xil_pn:name="mux2x1_tb.vhd"/>
+      <outfile xil_pn:name="mux4x1.vhd"/>
+      <outfile xil_pn:name="mux4x1_tb.vhd"/>
+      <outfile xil_pn:name="mux8x1.vhd"/>
+      <outfile xil_pn:name="mux8x1_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1541166236" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1112301620576563742" xil_pn:start_ts="1541166236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1541166236" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3877018862184703584" xil_pn:start_ts="1541166236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1541166236" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5881673149634655546" xil_pn:start_ts="1541166236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1541166236" xil_pn:in_ck="9120899906047523565" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1541166236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="mux2x1.vhd"/>
+      <outfile xil_pn:name="mux2x1_tb.vhd"/>
+      <outfile xil_pn:name="mux4x1.vhd"/>
+      <outfile xil_pn:name="mux4x1_tb.vhd"/>
+      <outfile xil_pn:name="mux8x1.vhd"/>
+      <outfile xil_pn:name="mux8x1_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1541166240" xil_pn:in_ck="9120899906047523565" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4688955001031877668" xil_pn:start_ts="1541166236">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mux4x1_tb_beh.prj"/>
+      <outfile xil_pn:name="mux4x1_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1541166240" xil_pn:in_ck="5433059430256386227" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8690868772628972561" xil_pn:start_ts="1541166240">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mux4x1_tb_isim_beh.wdb"/>
+    </transform>
     <transform xil_pn:end_ts="1540913586" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1540913586">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
