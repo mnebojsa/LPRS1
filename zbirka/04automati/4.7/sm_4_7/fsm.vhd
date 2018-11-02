@@ -22,7 +22,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -40,7 +40,7 @@ entity fsm is
 end fsm;
 
 architecture Behavioral of fsm is
-    type states is (IDLE, COMPUTE, DONE_EQU, DONE_UEQU);
+    type states is (IDLE, COMPUTE, DONE_EQU, DONE_NOT_EQU);
     signal stateCurrent, stateNext : states;
 	 
 	 component counter
@@ -48,71 +48,109 @@ architecture Behavioral of fsm is
 		      iEn     : in  std_logic;
 		      iCLK    : in  std_logic;
 		      iRSTn   : in  std_logic;
-			   oCnt    : out std_logic_vector(1 downto 0);
-            oCntMax : out std_logic
+			   oCnt    : out std_logic_vector(1 downto 0)
 		      );
 	 end component;
 
-    signal sCntDone : std_logic;
-    signal sCntVal  : std_logic_vector(1 downto 0);	 
-	 signal sBPE     : std_logic;
+    signal sCntDone  : std_logic;
+    signal sCntVal   : std_logic_vector(1 downto 0);	 
+	 signal sCntEnable_n      : std_logic;
+	 signal sStartCnt : std_logic;
 begin
 
-    sBPE <= BPE;
-
 Inst_counter: counter 
-    port map(
-		       iEn     => sBPE,
+   port map(
+		       iEn     => sCntEnable_n,
 		       iCLK    => CLK,
 		       iRSTn   => RSTn,
-		       oCnt    => sCntVal,
-				 oCntMax => sCntDone
+		       oCnt    => sCntVal
 	 );
 	 
-	 done <= sCntDone;
-    process(CLK)
-	 
+next_state_proc:	 
+    process(RSTn, stateCurrent, start, sCntDone, BPE)	 
 	 begin
-	     if rising_edge(CLK) then
-			  if ('0' = RSTn) then
-					stateNext <= IDLE;
-			  else
-					case stateCurrent is
-						 when IDLE => 
-						     if '1' = start then
-							       stateNext <= COMPUTE;
-						     else
-                            stateNext <= IDLE;
-                       end if;						  
-						 when COMPUTE   => 
-						     S <= sCntVal;
-						     if '1' = sCntDone then
-							       stateNext <= DONE_EQU;
-						     elsif '0' = sCntDone and sCntVal < "11" then
-                            stateNext <= DONE_UEQU;
-							  else
-                            stateNext <= COMPUTE;							  
-                       end if;
-						 when DONE_UEQU =>
-								equl <= '0';
-						 when DONE_EQU  => 
-								equl <= '1';
-					end case;
-			  end if;
-        end if;
+		 if ('0' = RSTn) then
+	        stateNext <= IDLE;
+		 else
+			  case stateCurrent is
+					 when IDLE => 
+				       if '1' = start then
+						     stateNext <= COMPUTE;
+						 else
+						     stateNext <= IDLE;						  
+						 end if;
+							  
+					 when COMPUTE   => 
+						 if '1' = sCntDone then
+						     stateNext <= DONE_EQU;
+						 elsif '0' = sCntDone and '1' = BPE then 
+							  stateNext <= DONE_NOT_EQU;
+						 else
+						     stateNext <= COMPUTE;
+					    end if;
+						      
+					 when DONE_NOT_EQU =>
+					     stateNext <= IDLE; 					  
+				    when DONE_EQU  => 
+                    stateNext <= IDLE;
+		      end case;
+
+	     end if;
 	 end process;
 
+fsm_out_signal_val_proc:
+    process(RSTn, stateCurrent, sCntVal)
+	 begin
+	     
+			  if ('0' = RSTn) then
+               done <= '0';
+               equl <= '0';		
+				   sCntDone  <= '0';	
+				   sStartCnt <= '1';						
+			  else
+					case stateCurrent is
+						 when IDLE      => 
+                       done <= '0';
+                       equl <= '0';	
+							  sCntDone  <= '0';
+							  sStartCnt <= '1';								  
+						 when COMPUTE   => 
+                       if "11" = sCntVal then
+                           sCntDone <= '1';
+									sStartCnt <= '1';
+                       else
+							      sStartCnt <= '0';										
+                       end if;							  
+						 when DONE_NOT_EQU =>
+						     sStartCnt <= '1';
+                       done <= '1';
+                       equl <= '0';				  
+						 when DONE_EQU  =>
+                       sStartCnt <= '1';						 
+                       done <= '1';
+                       equl <= '1';	                     
+					end case;
+			  end if;
+	 end process;	
+
+
+current_state_proc:
     process(CLK)
-	 
 	 begin
 	     if rising_edge(CLK) then
 			  if ('0' = RSTn) then
-					stateCurrent <= IDLE;
+			      stateCurrent <= IDLE;
 			  else
 					stateCurrent <= stateNext;
 			  end if;
         end if;
-	 end process;
 
+	 end process;	 
+
+
+    S            <= sCntVal;
+	 sCntEnable_n <= BPE or sStartCnt; 
+	 
 end Behavioral;
+
 

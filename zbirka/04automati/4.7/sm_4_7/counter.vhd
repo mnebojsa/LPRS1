@@ -33,8 +33,8 @@ entity counter is
     Port ( iEn      : in   std_logic;
            iCLK     : in   std_logic;
            iRSTn    : in   std_logic;
-			  oCnt     : out  std_logic_vector(1 downto 0);
-           oCntMax  : out  std_logic );
+			  oCnt     : out  std_logic_vector(1 downto 0)
+			  );
 end counter;
 
 architecture Behavioral of counter is
@@ -49,13 +49,12 @@ begin
 					oCnt <= "00";
 					vCount :="00";
 				else	
-					if '1' = iEn then
-						 if vCount < "11" then
-							 vCount := vCount + 1;
-							 oCnt <= std_logic_vector(vCount);
-						 else
-							 oCntMax <= '1';	
-                   end if;							 
+					if '0' = iEn then
+						 vCount := vCount + 1;
+					    oCnt <= std_logic_vector(vCount);	
+               else
+                   oCnt <= "00";	
+                   vCount := "00";						 
 					end if;
 				end if;
 		  end if;

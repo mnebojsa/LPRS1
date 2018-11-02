@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: sm_4_7.prj
 
@@ -148,27 +148,40 @@ Unit <mux4x1> synthesized.
 
 Synthesizing Unit <fsm>.
     Related source file is "D:\LPRS1_git\LPRS1\zbirka\04automati\4.7\sm_4_7\fsm.vhd".
-    Found 2-bit register for signal <S>.
-    Found 1-bit register for signal <equl>.
     Found 2-bit register for signal <stateCurrent>.
-    Found 2-bit register for signal <stateNext>.
-    Found 2-bit comparator greater for signal <sCntVal[1]_PWR_5_o_LessThan_2_o> created at line 91
+    Found finite state machine <FSM_0> for signal <stateCurrent>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RSTn_INV_10_o (positive)                       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <S<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <S<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <done>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <equl>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sCntDone>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   7 D-type flip-flop(s).
-	inferred   1 Comparator(s).
-	inferred   2 Multiplexer(s).
+	inferred   5 Latch(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
 Unit <fsm> synthesized.
 
 Synthesizing Unit <counter>.
     Related source file is "D:\LPRS1_git\LPRS1\zbirka\04automati\4.7\sm_4_7\counter.vhd".
     Found 2-bit register for signal <vCount>.
     Found 2-bit register for signal <oCnt>.
-    Found 2-bit adder for signal <vCount[1]_GND_7_o_add_1_OUT> created at line 1241.
-    Found 2-bit comparator lessequal for signal <vCount[1]_PWR_7_o_LessThan_1_o> created at line 53
+    Found 2-bit adder for signal <vCount[1]_GND_7_o_add_0_OUT> created at line 1241.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   4 D-type flip-flop(s).
-	inferred   1 Comparator(s).
 Unit <counter> synthesized.
 
 =========================================================================
@@ -177,15 +190,14 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  2-bit adder                                           : 1
-# Registers                                            : 6
- 1-bit register                                        : 1
- 2-bit register                                        : 5
-# Comparators                                          : 2
- 2-bit comparator greater                              : 1
- 2-bit comparator lessequal                            : 1
-# Multiplexers                                         : 4
+# Registers                                            : 2
+ 2-bit register                                        : 2
+# Latches                                              : 5
+ 1-bit latch                                           : 5
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 3
  1-bit 4-to-1 multiplexer                              : 2
- 2-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
 # Xors                                                 : 1
  1-bit xor2                                            : 1
 
@@ -195,10 +207,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <G1> is unconnected in block <sm_4_7>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <G2> is unconnected in block <sm_4_7>.
-   It will be removed from the design.
 
 Synthesizing (advanced) Unit <counter>.
 The following registers are absorbed into counter <vCount>: 1 register on signal <vCount>.
@@ -212,14 +220,12 @@ Macro Statistics
  2-bit adder                                           : 1
 # Counters                                             : 1
  2-bit up counter                                      : 1
-# Registers                                            : 9
- Flip-Flops                                            : 9
-# Comparators                                          : 2
- 2-bit comparator greater                              : 1
- 2-bit comparator lessequal                            : 1
-# Multiplexers                                         : 4
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 3
  1-bit 4-to-1 multiplexer                              : 2
- 2-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
 # Xors                                                 : 1
  1-bit xor2                                            : 1
 
@@ -228,18 +234,20 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <vCount_0> in Unit <counter> is equivalent to the following FF/Latch, which will be removed : <oCnt_0> 
-INFO:Xst:2261 - The FF/Latch <vCount_1> in Unit <counter> is equivalent to the following FF/Latch, which will be removed : <oCnt_1> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Inst_fsm/FSM_0> on signal <stateCurrent[1:2]> with user encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ idle         | 00
+ compute      | 01
+ done_equ     | 10
+ done_not_equ | 11
+--------------------------
 
 Optimizing unit <sm_4_7> ...
 
 Optimizing unit <fsm> ...
-
-Optimizing unit <counter> ...
-WARNING:Xst:2677 - Node <Inst_fsm/S_1> of sequential type is unconnected in block <sm_4_7>.
-WARNING:Xst:2677 - Node <Inst_fsm/S_0> of sequential type is unconnected in block <sm_4_7>.
-WARNING:Xst:2677 - Node <Inst_fsm/Inst_counter/vCount_1> of sequential type is unconnected in block <sm_4_7>.
-WARNING:Xst:2677 - Node <Inst_fsm/Inst_counter/vCount_0> of sequential type is unconnected in block <sm_4_7>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -251,8 +259,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 5
- Flip-Flops                                            : 5
+# Registers                                            : 6
+ Flip-Flops                                            : 6
 
 =========================================================================
 
@@ -275,18 +283,23 @@ Top Level Output File Name         : sm_4_7.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 5
-#      INV                         : 1
-#      LUT3                        : 1
+# BELS                             : 19
+#      INV                         : 2
+#      LUT2                        : 4
+#      LUT3                        : 2
 #      LUT4                        : 2
-#      VCC                         : 1
-# FlipFlops/Latches                : 5
-#      FD                          : 1
-#      FDR                         : 4
+#      LUT5                        : 5
+#      LUT6                        : 3
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 11
+#      FD                          : 2
+#      FDR                         : 2
+#      FDRE                        : 2
+#      LDC                         : 5
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 4
-#      IBUF                        : 2
+# IO Buffers                       : 12
+#      IBUF                        : 10
 #      OBUF                        : 2
 
 Device utilization summary:
@@ -296,20 +309,21 @@ Selected Device : 6slx4tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:               5  out of   4800     0%  
- Number of Slice LUTs:                    4  out of   2400     0%  
-    Number used as Logic:                 4  out of   2400     0%  
+ Number of Slice Registers:               9  out of   4800     0%  
+ Number of Slice LUTs:                   18  out of   2400     0%  
+    Number used as Logic:                18  out of   2400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      9
-   Number with an unused Flip Flop:       4  out of      9    44%  
-   Number with an unused LUT:             5  out of      9    55%  
-   Number of fully used LUT-FF pairs:     0  out of      9     0%  
-   Number of unique control sets:         2
+ Number of LUT Flip Flop pairs used:     20
+   Number with an unused Flip Flop:      11  out of     20    55%  
+   Number with an unused LUT:             2  out of     20    10%  
+   Number of fully used LUT-FF pairs:     7  out of     20    35%  
+   Number of unique control sets:         6
 
 IO Utilization: 
  Number of IOs:                          13
- Number of bonded IOBs:                   5  out of    102     4%  
+ Number of bonded IOBs:                  13  out of    102    12%  
+    IOB Flip Flops/Latches:               2
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -332,11 +346,18 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 5     |
------------------------------------+------------------------+-------+
+---------------------------------------------------------------------------------------------+---------------------------+-------+
+Clock Signal                                                                                 | Clock buffer(FF name)     | Load  |
+---------------------------------------------------------------------------------------------+---------------------------+-------+
+CLK                                                                                          | BUFGP                     | 6     |
+Inst_fsm/stateCurrent[1]_PWR_10_o_Mux_20_o(Inst_fsm/stateCurrent__n0053<1>1:O)               | NONE(*)(Inst_fsm/equl)    | 2     |
+Inst_fsm/stateCurrent[1]_GND_8_o_Mux_16_o(Inst_fsm/Mmux_stateCurrent[1]_GND_8_o_Mux_16_o11:O)| NONE(*)(Inst_fsm/S_0)     | 2     |
+Inst_fsm/stateCurrent[1]_GND_12_o_Mux_24_o(Inst_fsm/stateCurrent[1]_GND_12_o_Mux_24_o1:O)    | NONE(*)(Inst_fsm/sCntDone)| 1     |
+---------------------------------------------------------------------------------------------+---------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -346,9 +367,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 1.788ns (Maximum Frequency: 559.284MHz)
-   Minimum input arrival time before clock: 3.570ns
-   Maximum output required time after clock: 4.162ns
+   Minimum period: 2.975ns (Maximum Frequency: 336.134MHz)
+   Minimum input arrival time before clock: 5.275ns
+   Maximum output required time after clock: 4.174ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -357,64 +378,128 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 1.788ns (frequency: 559.284MHz)
-  Total number of paths / destination ports: 11 / 5
+  Clock period: 2.975ns (frequency: 336.134MHz)
+  Total number of paths / destination ports: 26 / 8
 -------------------------------------------------------------------------
-Delay:               1.788ns (Levels of Logic = 1)
-  Source:            Inst_fsm/equl (FF)
-  Destination:       Inst_fsm/equl (FF)
+Delay:               2.975ns (Levels of Logic = 2)
+  Source:            Inst_fsm/Inst_counter/oCnt_0 (FF)
+  Destination:       Inst_fsm/Inst_counter/oCnt_1 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: Inst_fsm/equl to Inst_fsm/equl
+  Data Path: Inst_fsm/Inst_counter/oCnt_0 to Inst_fsm/Inst_counter/oCnt_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.954  Inst_fsm/equl (Inst_fsm/equl)
-     LUT4:I1->O            1   0.235   0.000  Inst_fsm/equl_rstpot (Inst_fsm/equl_rstpot)
-     FD:D                      0.074          Inst_fsm/equl
+     FD:C->Q               7   0.525   1.186  Inst_fsm/Inst_counter/oCnt_0 (Inst_fsm/Inst_counter/oCnt_0)
+     LUT6:I2->O            1   0.254   0.682  Inst_fsm/Inst_counter/iEn_01 (Inst_fsm/Inst_counter/iEn_0)
+     LUT3:I2->O            1   0.254   0.000  Inst_fsm/Inst_counter/oCnt_1_rstpot (Inst_fsm/Inst_counter/oCnt_1_rstpot)
+     FD:D                      0.074          Inst_fsm/Inst_counter/oCnt_1
     ----------------------------------------
-    Total                      1.788ns (0.834ns logic, 0.954ns route)
-                                       (46.6% logic, 53.4% route)
+    Total                      2.975ns (1.107ns logic, 1.868ns route)
+                                       (37.2% logic, 62.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 6 / 6
+  Total number of paths / destination ports: 51 / 10
 -------------------------------------------------------------------------
-Offset:              3.570ns (Levels of Logic = 2)
-  Source:            RSTn (PAD)
-  Destination:       Inst_fsm/stateCurrent_1 (FF)
+Offset:              5.275ns (Levels of Logic = 5)
+  Source:            iA<3> (PAD)
+  Destination:       Inst_fsm/Inst_counter/oCnt_1 (FF)
   Destination Clock: CLK rising
 
-  Data Path: RSTn to Inst_fsm/stateCurrent_1
+  Data Path: iA<3> to Inst_fsm/Inst_counter/oCnt_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.328   0.725  RSTn_IBUF (RSTn_IBUF)
-     INV:I->O              4   0.255   0.803  Inst_fsm/RSTn_inv1_INV_0 (Inst_fsm/RSTn_inv)
-     FDR:R                     0.459          Inst_fsm/stateCurrent_0
+     IBUF:I->O             1   1.328   0.958  iA_3_IBUF (iA_3_IBUF)
+     LUT5:I1->O            1   0.254   0.000  Mxor_sBPE_xo<0>3_G (N3)
+     MUXF7:I1->O           5   0.175   1.296  Mxor_sBPE_xo<0>3 (sBPE)
+     LUT6:I0->O            1   0.254   0.682  Inst_fsm/Inst_counter/iEn_01 (Inst_fsm/Inst_counter/iEn_0)
+     LUT3:I2->O            1   0.254   0.000  Inst_fsm/Inst_counter/oCnt_1_rstpot (Inst_fsm/Inst_counter/oCnt_1_rstpot)
+     FD:D                      0.074          Inst_fsm/Inst_counter/oCnt_1
     ----------------------------------------
-    Total                      3.570ns (2.042ns logic, 1.528ns route)
-                                       (57.2% logic, 42.8% route)
+    Total                      5.275ns (2.339ns logic, 2.936ns route)
+                                       (44.3% logic, 55.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_fsm/stateCurrent[1]_PWR_10_o_Mux_20_o'
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.162ns (Levels of Logic = 1)
-  Source:            Inst_fsm/equl (FF)
-  Destination:       e (PAD)
-  Source Clock:      CLK rising
+Offset:              3.926ns (Levels of Logic = 2)
+  Source:            RSTn (PAD)
+  Destination:       Inst_fsm/equl (LATCH)
+  Destination Clock: Inst_fsm/stateCurrent[1]_PWR_10_o_Mux_20_o falling
 
-  Data Path: Inst_fsm/equl to e
+  Data Path: RSTn to Inst_fsm/equl
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.725  Inst_fsm/equl (Inst_fsm/equl)
-     OBUF:I->O                 2.912          e_OBUF (e)
+     IBUF:I->O             7   1.328   0.909  RSTn_IBUF (RSTn_IBUF)
+     INV:I->O              9   0.255   0.975  Inst_fsm/RSTn_inv1_INV_0 (Inst_fsm/RSTn_inv)
+     LDC:CLR                   0.459          Inst_fsm/done
     ----------------------------------------
-    Total                      4.162ns (3.437ns logic, 0.725ns route)
-                                       (82.6% logic, 17.4% route)
+    Total                      3.926ns (2.042ns logic, 1.884ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_fsm/stateCurrent[1]_GND_8_o_Mux_16_o'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.926ns (Levels of Logic = 2)
+  Source:            RSTn (PAD)
+  Destination:       Inst_fsm/S_0 (LATCH)
+  Destination Clock: Inst_fsm/stateCurrent[1]_GND_8_o_Mux_16_o falling
+
+  Data Path: RSTn to Inst_fsm/S_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.328   0.909  RSTn_IBUF (RSTn_IBUF)
+     INV:I->O              9   0.255   0.975  Inst_fsm/RSTn_inv1_INV_0 (Inst_fsm/RSTn_inv)
+     LDC:CLR                   0.459          Inst_fsm/S_1
+    ----------------------------------------
+    Total                      3.926ns (2.042ns logic, 1.884ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_fsm/stateCurrent[1]_GND_12_o_Mux_24_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.926ns (Levels of Logic = 2)
+  Source:            RSTn (PAD)
+  Destination:       Inst_fsm/sCntDone (LATCH)
+  Destination Clock: Inst_fsm/stateCurrent[1]_GND_12_o_Mux_24_o falling
+
+  Data Path: RSTn to Inst_fsm/sCntDone
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.328   0.909  RSTn_IBUF (RSTn_IBUF)
+     INV:I->O              9   0.255   0.975  Inst_fsm/RSTn_inv1_INV_0 (Inst_fsm/RSTn_inv)
+     LDC:CLR                   0.459          Inst_fsm/sCntDone
+    ----------------------------------------
+    Total                      3.926ns (2.042ns logic, 1.884ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_fsm/stateCurrent[1]_PWR_10_o_Mux_20_o'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.174ns (Levels of Logic = 1)
+  Source:            Inst_fsm/done (LATCH)
+  Destination:       done (PAD)
+  Source Clock:      Inst_fsm/stateCurrent[1]_PWR_10_o_Mux_20_o falling
+
+  Data Path: Inst_fsm/done to done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.681  Inst_fsm/done (Inst_fsm/done)
+     OBUF:I->O                 2.912          done_OBUF (done)
+    ----------------------------------------
+    Total                      4.174ns (3.493ns logic, 0.681ns route)
+                                       (83.7% logic, 16.3% route)
 
 =========================================================================
 
@@ -422,24 +507,50 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock CLK
+------------------------------------------+---------+---------+---------+---------+
+                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------+---------+---------+---------+---------+
+CLK                                       |    2.975|         |         |         |
+Inst_fsm/stateCurrent[1]_GND_12_o_Mux_24_o|         |    1.739|         |         |
+Inst_fsm/stateCurrent[1]_GND_8_o_Mux_16_o |         |    4.726|         |         |
+------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inst_fsm/stateCurrent[1]_GND_12_o_Mux_24_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    1.788|         |         |         |
+CLK            |         |         |    1.958|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inst_fsm/stateCurrent[1]_GND_8_o_Mux_16_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    1.470|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inst_fsm/stateCurrent[1]_PWR_10_o_Mux_20_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    1.958|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.24 secs
+Total CPU time to Xst completion: 5.12 secs
  
 --> 
 
-Total memory usage is 259184 kilobytes
+Total memory usage is 259120 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    6 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 
