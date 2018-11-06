@@ -50,13 +50,13 @@ begin
 					vCount :="00";
 				else	
 					if '0' = iEn then
-						 vCount := vCount + 1;
-					    oCnt <= std_logic_vector(vCount);	
+						 vCount := vCount + 1;	
                else
                    oCnt <= "00";	
                    vCount := "00";						 
 					end if;
 				end if;
+				oCnt <= std_logic_vector(vCount);
 		  end if;
 	 end process;
 end Behavioral;
