@@ -1,0 +1,1 @@
+vhdtdtfi -prj cnt2lcdDisplay -o D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.1/cnt2lcdDisplay/cntr.vhi -module cntr -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work cntr.vhd 

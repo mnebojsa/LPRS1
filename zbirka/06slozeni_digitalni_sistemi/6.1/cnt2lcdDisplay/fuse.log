@@ -1,0 +1,24 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.1/cnt2lcdDisplay/cnt2lcd_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.1/cnt2lcdDisplay/cnt2lcd_tb_beh.prj" "work.cnt2lcd_tb" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.1/cnt2lcdDisplay/SSegDisplay.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.1/cnt2lcdDisplay/cntr.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.1/cnt2lcdDisplay/cnt2lcd.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.1/cnt2lcdDisplay/cnt2lcd_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity cntr [cntr_default]
+Compiling architecture behavioral of entity SSegDisplay [ssegdisplay_default]
+Compiling architecture behavioral of entity cnt2lcd [cnt2lcd_default]
+Compiling architecture behavior of entity cnt2lcd_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 VHDL Units
+Built simulation executable D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.1/cnt2lcdDisplay/cnt2lcd_tb_isim_beh.exe
+Fuse Memory Usage: 35284 KB
+Fuse CPU Usage: 577 ms
