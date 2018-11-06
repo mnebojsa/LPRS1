@@ -1,0 +1,1 @@
+vhdtdtfi -prj digSys_6_5 -o D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.5/digSys_6_5/dec2x4.vhi -module dec2x4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work dec2x4.vhd 

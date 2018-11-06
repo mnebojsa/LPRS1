@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    08:59:14 10/31/2018 
+-- Create Date:    17:12:38 11/06/2018 
 -- Design Name: 
--- Module Name:    mux4x1 - Behavioral 
+-- Module Name:    reg - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,21 +29,32 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity mux4x1 is
-    Port ( iD   : in   std_logic_vector(15 downto 0);
-           iSel : in   std_logic_vector(1 downto 0);
-           oY   : out  std_logic_vector(3 downto 0));
-end mux4x1;
+entity reg is
+    Port ( iCLK    : in  std_logic;
+           iWe     : in  std_logic;
+           iRSTn   : in  std_logic;
+           iD      : in  std_logic_vector (3 downto 0);
+           oRegVal : out std_logic_vector (3 downto 0) );
+end reg;
 
-architecture Behavioral of mux4x1 is
-
+architecture Behavioral of reg is
+    signal sRegVal : std_logic_vector (3 downto 0);
 begin
 
-    with iSel select oY <=
-	     iD( 3 downto  0) when "00",
-		  iD( 7 downto  4) when "01",
-		  iD(11 downto  8) when "10",
-		  iD(15 downto 12) when "11",
-		           "ZZZZ"  when others;
-		  
+    process(iCLK)
+	 begin
+	     if (rising_edge(iCLK)) then
+		      if (iRSTn = '0') then
+				    sRegVal <= "0000";
+				elsif (iWe = '1') then
+				    sRegVal <= iD;
+				else
+				    sRegVal <= sRegVal;
+				end if;
+		  end if;
+	 end process;
+
+    oRegVal <= sRegVal;
+
 end Behavioral;
+
