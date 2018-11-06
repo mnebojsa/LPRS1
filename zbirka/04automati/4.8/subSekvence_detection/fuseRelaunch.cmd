@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/04automati/4.8/subSekvence_detection/subS_detection_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/04automati/4.8/subSekvence_detection/subS_detection_tb_beh.prj" "work.subS_detection_tb" 
