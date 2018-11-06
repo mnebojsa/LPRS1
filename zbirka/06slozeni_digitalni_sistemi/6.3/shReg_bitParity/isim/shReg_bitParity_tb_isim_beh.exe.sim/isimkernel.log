@@ -1,0 +1,28 @@
+Command line:
+   shReg_bitParity_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55080
+
+Tue Nov 06 16:35:45 2018
+
+
+ Elaboration Time: 0.078001 sec
+
+ Current Memory Usage: 829.682 Meg
+
+ Total Signals          : 24
+ Total Nets             : 16
+ Total Signal Drivers   : 9
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 5
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 377
+
+ Total Simulation Time: 0.655204 sec
+
+ Current Memory Usage: 1144.25 Meg
+
+Tue Nov 06 16:37:15 2018
+

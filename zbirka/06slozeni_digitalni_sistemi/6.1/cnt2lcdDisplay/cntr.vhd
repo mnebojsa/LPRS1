@@ -29,8 +29,8 @@ use IEEE.NUMERIC_STD.ALL;
 entity cntr is
     Port ( iCLK      : in   std_logic;
            inReset_n : in   std_logic;
-           iEn_n     : in   std_logic;
-           SSeg      : out  std_logic_vector(3 downto 0) );
+           iEn       : in   std_logic;
+           oSCnt     : out  std_logic_vector(3 downto 0) );
 end cntr;
 
 architecture Behavioral of cntr is
@@ -41,7 +41,7 @@ begin
 	     if(rising_edge(iCLK)) then
 		      if (inReset_n = '0') then
 				    sSSeg <= "0000";
-				elsif (iEn_n = '0') then
+				elsif (iEn = '1') then
 				    sSSeg <= sSSeg + "0001";
 				else
 				    sSSeg <= sSSeg;
@@ -49,7 +49,7 @@ begin
 		  end if;
 	 end process;
 
-    SSeg <= std_logic_vector(sSSeg);
+    oSCnt <= std_logic_vector(sSSeg);
 
 end Behavioral;
 

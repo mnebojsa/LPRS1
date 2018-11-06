@@ -88,6 +88,8 @@
     <transform xil_pn:end_ts="1541513484" xil_pn:in_ck="3003922022650652072" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5466620087514125386" xil_pn:start_ts="1541513480">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="cnt2lcd_tb_beh.prj"/>
       <outfile xil_pn:name="cnt2lcd_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -97,6 +99,8 @@
     <transform xil_pn:end_ts="1541513485" xil_pn:in_ck="2625073859423672174" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5097847950217847753" xil_pn:start_ts="1541513484">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="cnt2lcd_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
     </transform>

@@ -1,0 +1,3 @@
+work	"parity_gen.vhd"
+work	"shReg_bitParity.vhd"
+work	"sh_reg.vhd"
