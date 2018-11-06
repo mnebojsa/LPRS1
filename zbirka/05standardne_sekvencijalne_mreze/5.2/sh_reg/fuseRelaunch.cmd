@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/05standardne_sekvencijalne_mreze/5.2/sh_reg/sh_reg_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/05standardne_sekvencijalne_mreze/5.2/sh_reg/sh_reg_tb_beh.prj" "work.sh_reg_tb" 
