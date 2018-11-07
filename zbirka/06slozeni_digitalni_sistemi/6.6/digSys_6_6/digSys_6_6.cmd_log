@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6/digSys_6_6.xst" -ofn "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6/digSys_6_6.syr" 

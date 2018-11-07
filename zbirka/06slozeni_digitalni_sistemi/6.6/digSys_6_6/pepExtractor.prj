@@ -1,0 +1,4 @@
+work	"../../6.5/digSys_6_5/reg.vhd"
+work	"buff.vhd"
+work	"dec3x8.vhd"
+work	"digSys_6_6.vhd"

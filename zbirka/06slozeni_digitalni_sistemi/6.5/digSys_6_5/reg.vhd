@@ -48,8 +48,6 @@ begin
 				    sRegVal <= "0000";
 				elsif (iWe = '1') then
 				    sRegVal <= iD;
-				else
-				    sRegVal <= sRegVal;
 				end if;
 		  end if;
 	 end process;

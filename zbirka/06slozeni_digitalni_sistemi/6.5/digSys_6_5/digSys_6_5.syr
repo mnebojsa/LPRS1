@@ -228,7 +228,8 @@ Top Level Output File Name         : digSys_6_5.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 8
+# BELS                             : 9
+#      INV                         : 1
 #      LUT3                        : 4
 #      LUT6                        : 4
 # FlipFlops/Latches                : 16
@@ -247,14 +248,14 @@ Selected Device : 6slx4tqg144-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:              16  out of   4800     0%  
- Number of Slice LUTs:                    8  out of   2400     0%  
-    Number used as Logic:                 8  out of   2400     0%  
+ Number of Slice LUTs:                    9  out of   2400     0%  
+    Number used as Logic:                 9  out of   2400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     18
-   Number with an unused Flip Flop:       2  out of     18    11%  
-   Number with an unused LUT:            10  out of     18    55%  
-   Number of fully used LUT-FF pairs:     6  out of     18    33%  
+ Number of LUT Flip Flop pairs used:     19
+   Number with an unused Flip Flop:       3  out of     19    15%  
+   Number with an unused LUT:            10  out of     19    52%  
+   Number of fully used LUT-FF pairs:     6  out of     19    31%  
    Number of unique control sets:         4
 
 IO Utilization: 
@@ -297,7 +298,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 3.997ns
+   Minimum input arrival time before clock: 3.904ns
    Maximum output required time after clock: 5.330ns
    Maximum combinational path delay: 6.574ns
 
@@ -309,21 +310,21 @@ All values displayed in nanoseconds (ns)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'iCLK'
   Total number of paths / destination ports: 80 / 48
 -------------------------------------------------------------------------
-Offset:              3.997ns (Levels of Logic = 2)
-  Source:            iAddress<0> (PAD)
+Offset:              3.904ns (Levels of Logic = 2)
+  Source:            iRSTn (PAD)
   Destination:       Inst_reg3/sRegVal_3 (FF)
   Destination Clock: iCLK rising
 
-  Data Path: iAddress<0> to Inst_reg3/sRegVal_3
+  Data Path: iRSTn to Inst_reg3/sRegVal_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   1.328   1.172  iAddress_0_IBUF (iAddress_0_IBUF)
-     LUT3:I0->O            4   0.235   0.803  Inst_reg3/iRSTn_inv1 (Inst_reg3/iRSTn_inv)
-     FDRE:R                    0.459          Inst_reg3/sRegVal_0
+     IBUF:I->O             1   1.328   0.681  iRSTn_IBUF (iRSTn_IBUF)
+     INV:I->O             16   0.255   1.181  Inst_reg0/iRSTn_inv1_INV_0 (Inst_reg0/iRSTn_inv)
+     FDRE:R                    0.459          Inst_reg0/sRegVal_0
     ----------------------------------------
-    Total                      3.997ns (2.022ns logic, 1.975ns route)
-                                       (50.6% logic, 49.4% route)
+    Total                      3.904ns (2.042ns logic, 1.862ns route)
+                                       (52.3% logic, 47.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'iCLK'
@@ -373,11 +374,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.34 secs
+Total CPU time to Xst completion: 4.93 secs
  
 --> 
 
-Total memory usage is 257072 kilobytes
+Total memory usage is 257712 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

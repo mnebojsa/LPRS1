@@ -78,32 +78,32 @@ Inst_dec2x4:
 Inst_reg0: 
     reg 
 	 port map( iCLK    => iCLK,
-	           iWe     => iRSTn,
-		        iRSTn   => selReg(0),
+	           iWe     => selReg(0),
+		        iRSTn   => iRSTn,
 		        iD      => iD,
 		        oRegVal => sRegOutD0);
 				  
 Inst_reg1: 
     reg 
 	 port map( iCLK    => iCLK,
-	           iWe     => iRSTn,
-		        iRSTn   => selReg(1),
+	           iWe     => selReg(1),
+		        iRSTn   => iRSTn,
 		        iD      => iD,
 		        oRegVal => sRegOutD1);
 
 Inst_reg2: 
     reg 
 	 port map( iCLK    => iCLK,
-	           iWe     => iRSTn,
-		        iRSTn   => selReg(2),
+	           iWe     => selReg(2),
+		        iRSTn   => iRSTn,
 		        iD      => iD,
 		        oRegVal => sRegOutD2);
 
 Inst_reg3: 
     reg 
 	 port map( iCLK    => iCLK,
-	           iWe     => iRSTn,
-		        iRSTn   => selReg(3),
+	           iWe     => selReg(3),
+		        iRSTn   => iRSTn,
 		        iD      => iD,
 		        oRegVal => sRegOutD3);				  
 

@@ -1,0 +1,28 @@
+Command line:
+   digSys_6_6_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60212
+
+Wed Nov 07 10:11:43 2018
+
+
+ Elaboration Time: 0.062401 sec
+
+ Current Memory Usage: 829.686 Meg
+
+ Total Signals          : 61
+ Total Nets             : 54
+ Total Signal Drivers   : 20
+ Total Blocks           : 12
+ Total Primitive Blocks : 10
+ Total Processes        : 16
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 415
+
+ Total Simulation Time: 0.218402 sec
+
+ Current Memory Usage: 1144.26 Meg
+
+Wed Nov 07 10:13:12 2018
+
