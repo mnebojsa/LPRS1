@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: digSys_6_6.prj
 
@@ -46,7 +46,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "digSys_6_6"
 Output Format                      : NGC
-Target Device                      : xc6slx4-2-tqg144
+Target Device                      : xc6slx45-2-fgg676
 
 ---- Source Options
 Top Module Name                    : digSys_6_6
@@ -203,7 +203,7 @@ Optimizing unit <digSys_6_6> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block digSys_6_6, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block digSys_6_6, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -250,13 +250,13 @@ Primitive and Black Box Usage:
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx4tqg144-2 
+Selected Device : 6slx45fgg676-2 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              16  out of   4800     0%  
- Number of Slice LUTs:                   14  out of   2400     0%  
-    Number used as Logic:                14  out of   2400     0%  
+ Number of Slice Registers:              16  out of  54576     0%  
+ Number of Slice LUTs:                   14  out of  27288     0%  
+    Number used as Logic:                14  out of  27288     0%  
 
 Slice Logic Distribution: 
  Number of LUT Flip Flop pairs used:     19
@@ -267,7 +267,7 @@ Slice Logic Distribution:
 
 IO Utilization: 
  Number of IOs:                          14
- Number of bonded IOBs:                  14  out of    102    13%  
+ Number of bonded IOBs:                  14  out of    358     3%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -383,11 +383,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.92 secs
+Total CPU time to Xst completion: 5.00 secs
  
 --> 
 
-Total memory usage is 257136 kilobytes
+Total memory usage is 257904 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

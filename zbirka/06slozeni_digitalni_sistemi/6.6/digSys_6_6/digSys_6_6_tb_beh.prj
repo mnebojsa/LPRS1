@@ -1,5 +1,0 @@
-vhdl work "dec3x8.vhd"
-vhdl work "buff.vhd"
-vhdl work "../../6.5/digSys_6_5/reg.vhd"
-vhdl work "digSys_6_6.vhd"
-vhdl work "digSys_6_6_tb.vhd"

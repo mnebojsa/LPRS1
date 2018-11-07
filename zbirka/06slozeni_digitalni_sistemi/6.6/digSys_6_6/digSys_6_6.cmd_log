@@ -1,1 +1,32 @@
 xst -intstyle ise -ifn "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6/digSys_6_6.xst" -ofn "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6/digSys_6_6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-2 digSys_6_6.ngc digSys_6_6.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digSys_6_6_map.ncd digSys_6_6.ngd digSys_6_6.pcf 
+par -w -intstyle ise -ol high -mt off digSys_6_6_map.ncd digSys_6_6.ncd digSys_6_6.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml digSys_6_6.twx digSys_6_6.ncd -o digSys_6_6.twr digSys_6_6.pcf 
+bitgen -intstyle ise -f digSys_6_6.ut digSys_6_6.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digSys_6_6.ucf -p xc6slx4-tqg144-2 digSys_6_6.ngc digSys_6_6.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digSys_6_6_map.ncd digSys_6_6.ngd digSys_6_6.pcf 
+par -w -intstyle ise -ol high -mt off digSys_6_6_map.ncd digSys_6_6.ncd digSys_6_6.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml digSys_6_6.twx digSys_6_6.ncd -o digSys_6_6.twr digSys_6_6.pcf -ucf digSys_6_6.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digSys_6_6.ucf -p xc6slx4-tqg144-2 digSys_6_6.ngc digSys_6_6.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digSys_6_6_map.ncd digSys_6_6.ngd digSys_6_6.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digSys_6_6.ucf -p xc6slx4-tqg144-2 digSys_6_6.ngc digSys_6_6.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digSys_6_6_map.ncd digSys_6_6.ngd digSys_6_6.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digSys_6_6.ucf -p xc6slx4-tqg144-2 digSys_6_6.ngc digSys_6_6.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digSys_6_6_map.ncd digSys_6_6.ngd digSys_6_6.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digSys_6_6.ucf -p xc6slx4-tqg144-2 digSys_6_6.ngc digSys_6_6.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digSys_6_6_map.ncd digSys_6_6.ngd digSys_6_6.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digSys_6_6.ucf -p xc6slx4-tqg144-2 digSys_6_6.ngc digSys_6_6.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digSys_6_6_map.ncd digSys_6_6.ngd digSys_6_6.pcf 
+xst -intstyle ise -ifn "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6/digSys_6_6.xst" -ofn "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6/digSys_6_6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digSys_6_6.ucf -p xc6slx45-fgg676-2 digSys_6_6.ngc digSys_6_6.ngd  
+map -intstyle ise -p xc6slx45-fgg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digSys_6_6_map.ncd digSys_6_6.ngd digSys_6_6.pcf 
+par -w -intstyle ise -ol high -mt off digSys_6_6_map.ncd digSys_6_6.ncd digSys_6_6.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml digSys_6_6.twx digSys_6_6.ncd -o digSys_6_6.twr digSys_6_6.pcf -ucf digSys_6_6.ucf 
+bitgen -intstyle ise -f digSys_6_6.ut digSys_6_6.ncd 
+xst -intstyle ise -ifn "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6/digSys_6_6.xst" -ofn "D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6/digSys_6_6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc digSys_6_6.ucf -p xc6slx45-fgg676-2 digSys_6_6.ngc digSys_6_6.ngd  
+map -intstyle ise -p xc6slx45-fgg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o digSys_6_6_map.ncd digSys_6_6.ngd digSys_6_6.pcf 
+par -w -intstyle ise -ol high -mt off digSys_6_6_map.ncd digSys_6_6.ncd digSys_6_6.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml digSys_6_6.twx digSys_6_6.ncd -o digSys_6_6.twr digSys_6_6.pcf -ucf digSys_6_6.ucf 
+bitgen -intstyle ise -f digSys_6_6.ut digSys_6_6.ncd 

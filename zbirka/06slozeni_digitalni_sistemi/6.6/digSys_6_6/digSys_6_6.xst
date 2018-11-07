@@ -4,7 +4,7 @@ run
 -ifn digSys_6_6.prj
 -ofn digSys_6_6
 -ofmt NGC
--p xc6slx4-2-tqg144
+-p xc6slx45-2-fgg676
 -top digSys_6_6
 -opt_mode Speed
 -opt_level 1

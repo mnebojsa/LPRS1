@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-07T09:59:39</DateModified>
+  <DateModified>2018-11-07T12:43:46</DateModified>
   <ModuleName>digSys_6_6</ModuleName>
-  <SummaryTimeStamp>2018-11-07T09:52:34</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-11-07T11:12:51</SummaryTimeStamp>
   <SavedFilePath>D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6/iseconfig/digSys_6_6.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.6/digSys_6_6\</ImplementationReportsDirectory>
   <DateInitialized>2018-11-07T09:06:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
