@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/LPRS1_git/LPRS1/zbirka/07memorije/7.3_sa_instanciranom_mem/fifo_instMem/fifo_instantieted.xst" -ofn "D:/LPRS1_git/LPRS1/zbirka/07memorije/7.3_sa_instanciranom_mem/fifo_instMem/fifo_instantieted.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx45-fgg676-2 fifo_instantieted.ngc fifo_instantieted.ngd  
+map -intstyle ise -p xc6slx45-fgg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fifo_instantieted_map.ncd fifo_instantieted.ngd fifo_instantieted.pcf 
+par -w -intstyle ise -ol high -mt off fifo_instantieted_map.ncd fifo_instantieted.ncd fifo_instantieted.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml fifo_instantieted.twx fifo_instantieted.ncd -o fifo_instantieted.twr fifo_instantieted.pcf 
+bitgen -intstyle ise -f fifo_instantieted.ut fifo_instantieted.ncd 

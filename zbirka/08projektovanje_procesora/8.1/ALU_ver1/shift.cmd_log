@@ -1,0 +1,4 @@
+vhdtdtfi -prj ALU_ver1 -o D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.1/ALU_ver1/shift.vhi -module shift -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work shift.vhd 
+vhdtdtfi -prj ALU_ver1 -o D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.1/ALU_ver1/shift.vhi -module shift -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work shift.vhd 
+vhdtdtfi -prj ALU_ver1 -o D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.1/ALU_ver1/shift.vhi -module shift -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work shift.vhd 
+vhdtdtfi -prj ALU_ver1 -o D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.1/ALU_ver1/shift.vhi -module shift -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work shift.vhd 

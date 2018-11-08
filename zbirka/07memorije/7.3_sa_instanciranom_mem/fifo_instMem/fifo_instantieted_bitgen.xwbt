@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\LPRS1_git\LPRS1\zbirka\07memorije\7.3_sa_instanciranom_mem\fifo_instMem\fifo_instantieted.ncd
+OUTFILE=D:\LPRS1_git\LPRS1\zbirka\07memorije\7.3_sa_instanciranom_mem\fifo_instMem\fifo_instantieted.bit
+FAMILY=Spartan6
+PART=xc6slx45-2fgg676
+WORKINGDIR=D:\LPRS1_git\LPRS1\zbirka\07memorije\7.3_sa_instanciranom_mem\fifo_instMem
+LICENSE=ISE
+USER_INFO=209858334_178080923_210593072_268

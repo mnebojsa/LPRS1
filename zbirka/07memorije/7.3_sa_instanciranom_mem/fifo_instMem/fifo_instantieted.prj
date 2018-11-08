@@ -1,0 +1,2 @@
+vhdl work "ipcore_dir/ram.vhd"
+vhdl work "fifo_instantieted.vhd"

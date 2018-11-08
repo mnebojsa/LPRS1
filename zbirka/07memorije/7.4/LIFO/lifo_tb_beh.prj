@@ -1,0 +1,2 @@
+vhdl work "lifo.vhd"
+vhdl work "lifo_tb.vhd"
