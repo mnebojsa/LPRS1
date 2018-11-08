@@ -1,0 +1,28 @@
+Command line:
+   lifo_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60167
+
+Thu Nov 08 11:32:27 2018
+
+
+ Elaboration Time: 0.015601 sec
+
+ Current Memory Usage: 829.78 Meg
+
+ Total Signals          : 21
+ Total Nets             : 113
+ Total Signal Drivers   : 13
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 6
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 597
+
+ Total Simulation Time: 0.234002 sec
+
+ Current Memory Usage: 829.78 Meg
+
+Thu Nov 08 11:32:45 2018
+
