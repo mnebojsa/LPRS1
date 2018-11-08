@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/03standardne_kombinacione_mreze/3.13/dec3x8/dec3x8_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/03standardne_kombinacione_mreze/3.13/dec3x8/dec3x8_tb_beh.prj" "work.dec3x8_tb" 

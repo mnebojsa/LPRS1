@@ -1,1 +1,0 @@
-vhdtdtfi -prj cnt2Heming -o D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.2/cnt2Heming/heming_coder.vhi -module heming_coder -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work heming_coder.vhd 

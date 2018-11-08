@@ -1,1 +1,0 @@
-vhdtdtfi -prj digSys_6_5 -o D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.5/digSys_6_5/mux4x1.vhi -module mux4x1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../../03standardne_kombinacione_mreze/3.15/mux8x1/mux4x1.vhd 

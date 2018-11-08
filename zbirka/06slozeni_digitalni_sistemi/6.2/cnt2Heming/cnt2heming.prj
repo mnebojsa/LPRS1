@@ -1,3 +1,0 @@
-vhdl work "heming_coder.vhd"
-vhdl work "../../6.1/cnt2lcdDisplay/cntr.vhd"
-vhdl work "cnt2heming.vhd"

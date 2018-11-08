@@ -1,1 +1,0 @@
-vhdtdtfi -prj shReg_bitParity -o D:/LPRS1_git/LPRS1/zbirka/06slozeni_digitalni_sistemi/6.3/shReg_bitParity/parity_gen.vhi -module parity_gen -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work parity_gen.vhd 

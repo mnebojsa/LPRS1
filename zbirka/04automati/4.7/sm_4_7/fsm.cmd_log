@@ -1,2 +1,0 @@
-vhdtdtfi -prj sm_4_7 -o D:/LPRS1_git/LPRS1/zbirka/04automati/4.7/sm_4_7/fsm.vhi -module fsm -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work fsm.vhd 
-vhdtdtfi -prj sm_4_7 -o D:/LPRS1_git/LPRS1/zbirka/04automati/4.7/sm_4_7/fsm.vhi -module fsm -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work fsm.vhd 

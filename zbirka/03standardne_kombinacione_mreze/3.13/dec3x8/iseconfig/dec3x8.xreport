@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-02T12:35:50</DateModified>
+  <DateModified>2018-11-08T10:14:56</DateModified>
   <ModuleName>dec3x8</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/LPRS1_git/LPRS1/zbirka/03standardne_kombinacione_mreze/3.13/dec3x8/iseconfig/dec3x8.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/LPRS1_git/LPRS1/zbirka/03standardne_kombinacione_mreze/3.13/dec3x8\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/git sredjivanje/LPRS1/zbirka/03standardne_kombinacione_mreze/3.13/dec3x8/iseconfig/dec3x8.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/git sredjivanje/LPRS1/zbirka/03standardne_kombinacione_mreze/3.13/dec3x8\</ImplementationReportsDirectory>
   <DateInitialized>2018-10-31T10:12:21</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

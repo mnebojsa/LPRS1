@@ -1,2 +1,0 @@
-vhdtdtfi -lib work mux2x1.vhd -prj mux8x1 -o mux2x1.spl -module mux2x1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 mux2x1.spl D:/LPRS1_git/LPRS1/zbirka/Standardne_kombinacione_mreze03/3.15/mux8x1/mux2x1.sym 

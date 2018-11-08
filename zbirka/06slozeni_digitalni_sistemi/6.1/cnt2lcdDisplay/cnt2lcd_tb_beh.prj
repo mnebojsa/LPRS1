@@ -1,4 +1,0 @@
-vhdl work "SSegDisplay.vhd"
-vhdl work "cntr.vhd"
-vhdl work "cnt2lcd.vhd"
-vhdl work "cnt2lcd_tb.vhd"

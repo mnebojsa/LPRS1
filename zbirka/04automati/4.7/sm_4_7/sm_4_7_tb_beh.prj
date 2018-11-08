@@ -1,5 +1,0 @@
-vhdl work "counter.vhd"
-vhdl work "mux4x1.vhd"
-vhdl work "fsm.vhd"
-vhdl work "sm_4_7.vhd"
-vhdl work "sm_4_7_tb.vhd"

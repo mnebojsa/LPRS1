@@ -1,3 +1,0 @@
-vhdl work "dec2x4.vhd"
-vhdl work "dec3x8.vhd"
-vhdl work "dec3x8_tb.vhd"

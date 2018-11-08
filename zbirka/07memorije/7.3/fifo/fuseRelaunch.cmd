@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/07memorije/7.3/fifo/fifo_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/07memorije/7.3/fifo/fifo_tb_beh.prj" "work.fifo_tb" 
