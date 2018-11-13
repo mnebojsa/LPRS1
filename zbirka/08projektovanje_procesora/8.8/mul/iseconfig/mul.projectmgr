@@ -2,23 +2,20 @@
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
-<Project version="2" owner="projectmgr" name="ALU_ver1" >
+<Project version="2" owner="projectmgr" name="mul" >
    <!--This is an ISE project configuration file.-->
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/ALU - RTL D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALU.vhd/Inst_ALCell1 - ALCell - dataFlow</ClosedNode>
-         <ClosedNode>/ALU - RTL D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALU.vhd/Inst_ALCell2 - ALCell - dataFlow</ClosedNode>
-         <ClosedNode>/ALU - RTL D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALU.vhd/Inst_ALCell3 - ALCell - dataFlow</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ALU - RTL (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.1/ALU_ver1/ALU.vhd)</SelectedItem>
+         <SelectedItem>mul - RTL (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.8/mul/mul.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017e0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d2000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d20000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ALU - RTL (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.1/ALU_ver1/ALU.vhd)</CurrentItem>
+      <CurrentItem>mul - RTL (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.8/mul/mul.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -26,13 +23,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -43,7 +40,7 @@
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002d70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>ALCell.vhd</CurrentItem>
+      <CurrentItem>mul.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -61,7 +58,6 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
@@ -70,58 +66,50 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>View RTL Schematic</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/ALCell_tb - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALCell_tb.vhd</ClosedNode>
-         <ClosedNode>/ALCell_tb - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALCell_tb.vhd/uut - ALCell - dataFlow</ClosedNode>
-         <ClosedNode>/fullAdder_tb - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|fullAdder_tb.vhd</ClosedNode>
-         <ClosedNode>/testbench - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALU_tb.vhd</ClosedNode>
-         <ClosedNode>/testbench - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALU_tb.vhd/uut - ALU - RTL/Inst_ALCell0 - ALCell - dataFlow</ClosedNode>
-         <ClosedNode>/testbench - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALU_tb.vhd/uut - ALU - RTL/Inst_ALCell1 - ALCell - dataFlow</ClosedNode>
-         <ClosedNode>/testbench - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALU_tb.vhd/uut - ALU - RTL/Inst_ALCell2 - ALCell - dataFlow</ClosedNode>
-         <ClosedNode>/testbench - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.1|ALU_ver1|ALU_tb.vhd/uut - ALU - RTL/Inst_ALCell3 - ALCell - dataFlow</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>testbench - behavior (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.1/ALU_ver1/ALU_tb.vhd)</SelectedItem>
+         <SelectedItem>add4_tb - behavior (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.8/mul/add4_tb.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000121000000020000000000000000000000000200000064ffffffff000000810000000300000002000001210000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000153000000020000000000000000000000000200000064ffffffff000000810000000300000002000001530000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>testbench - behavior (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.1/ALU_ver1/ALU_tb.vhd)</CurrentItem>
+      <CurrentItem>add4_tb - behavior (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.8/mul/add4_tb.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Design Utilities</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
 </Project>

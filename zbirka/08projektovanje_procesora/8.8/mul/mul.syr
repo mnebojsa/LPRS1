@@ -1,0 +1,597 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: mul.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mul.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mul"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-fgg676
+
+---- Source Options
+Top Module Name                    : mul
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\shReg.vhd" into library work
+Parsing entity <shReg>.
+Parsing architecture <Behavioral> of entity <shreg>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\reg.vhd" into library work
+Parsing entity <reg>.
+Parsing architecture <Behavioral> of entity <reg>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\command_unit.vhd" into library work
+Parsing entity <command_unit>.
+Parsing architecture <Behavioral> of entity <command_unit>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\cnt.vhd" into library work
+Parsing entity <cnt>.
+Parsing architecture <Behavioral> of entity <cnt>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\add4.vhd" into library work
+Parsing entity <add4>.
+Parsing architecture <Behavioral> of entity <add4>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\ACC.vhd" into library work
+Parsing entity <ACC>.
+Parsing architecture <Behavioral> of entity <acc>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\mul.vhd" into library work
+Parsing entity <mul>.
+Parsing architecture <RTL> of entity <mul>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <mul> (architecture <RTL>) from library <work>.
+
+Elaborating entity <reg> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <shReg> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <cnt> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <add4> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <command_unit> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\command_unit.vhd" Line 97. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\command_unit.vhd" Line 143. Case statement is complete. others clause is never selected
+
+Elaborating entity <ACC> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mul>.
+    Related source file is "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\mul.vhd".
+INFO:Xst:3210 - "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\mul.vhd" line 126: Output port <oQ> of the instance <Inst_shReg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\mul.vhd" line 154: Output port <onRSTn_A> of the instance <Inst_command_unit> is unconnected or connected to loadless signal.
+    Found 4-bit adder for signal <n0047> created at line 144.
+    Found 1-bit 5-to-1 multiplexer for signal <sHB[3]_siY[3]_Mux_45_o> created at line 146.
+    Found 1-bit 5-to-1 multiplexer for signal <sHB[3]_siY[2]_Mux_47_o> created at line 146.
+    Found 1-bit 5-to-1 multiplexer for signal <sHB[3]_siY[1]_Mux_49_o> created at line 146.
+    Found 1-bit 5-to-1 multiplexer for signal <sHB[3]_siY[0]_Mux_51_o> created at line 146.
+WARNING:Xst:737 - Found 1-bit latch for signal <siY<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <siY<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <siY<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <siY<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Latch(s).
+	inferred  11 Multiplexer(s).
+Unit <mul> synthesized.
+
+Synthesizing Unit <reg>.
+    Related source file is "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\reg.vhd".
+    Found 4-bit register for signal <siD>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reg> synthesized.
+
+Synthesizing Unit <shReg>.
+    Related source file is "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\shReg.vhd".
+    Found 1-bit register for signal <soDSR>.
+    Found 4-bit register for signal <siD>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <shReg> synthesized.
+
+Synthesizing Unit <cnt>.
+    Related source file is "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\cnt.vhd".
+    Found 1-bit register for signal <soTSE>.
+    Found 2-bit register for signal <sCount>.
+    Found 2-bit subtractor for signal <GND_7_o_GND_7_o_sub_2_OUT<1:0>> created at line 53.
+    Found 2-bit comparator greater for signal <GND_7_o_sCount[1]_LessThan_1_o> created at line 52
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <cnt> synthesized.
+
+Synthesizing Unit <add4>.
+    Related source file is "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\add4.vhd".
+    Found 5-bit adder for signal <oRes> created at line 41.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add4> synthesized.
+
+Synthesizing Unit <command_unit>.
+    Related source file is "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\command_unit.vhd".
+WARNING:Xst:647 - Input <inRESETn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <stateCurrent>.
+    Found finite state machine <FSM_0> for signal <stateCurrent>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 7                                              |
+    | Clock              | iCLK (rising_edge)                             |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <soLoad_Cnt>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <soLoad_A>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sonRSTn_A>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <soCE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <soREADY>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   5 Latch(s).
+	inferred   1 Finite State Machine(s).
+Unit <command_unit> synthesized.
+
+Synthesizing Unit <ACC>.
+    Related source file is "D:\LPRS1_git\LPRS1\zbirka\08projektovanje_procesora\8.8\mul\ACC.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <sACC<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sACC<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sACC<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sACC<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sACC<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sACC<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sACC<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sACC<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 Latch(s).
+Unit <ACC> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 2-bit subtractor                                      : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 5
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+ 4-bit register                                        : 2
+# Latches                                              : 17
+ 1-bit latch                                           : 17
+# Comparators                                          : 1
+ 2-bit comparator greater                              : 1
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 5-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <soCE> (without init value) has a constant value of 0 in block <Inst_command_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sACC_6> (without init value) has a constant value of 0 in block <Inst_ACC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sACC_5> (without init value) has a constant value of 0 in block <Inst_ACC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sACC_7> (without init value) has a constant value of 0 in block <Inst_ACC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <soDSR> (without init value) has a constant value of 0 in block <Inst_shReg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <siD_3> of sequential type is unconnected in block <Inst_shReg>.
+
+Synthesizing (advanced) Unit <cnt>.
+The following registers are absorbed into counter <sCount>: 1 register on signal <sCount>.
+Unit <cnt> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 1
+ 2-bit down counter                                    : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Comparators                                          : 1
+ 2-bit comparator greater                              : 1
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 11
+ 1-bit 5-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <soCE> (without init value) has a constant value of 0 in block <command_unit>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sACC_6> in Unit <ACC> is equivalent to the following 2 FFs/Latches, which will be removed : <sACC_5> <sACC_7> 
+WARNING:Xst:1710 - FF/Latch <soDSR> (without init value) has a constant value of 0 in block <shReg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sACC_6> (without init value) has a constant value of 0 in block <ACC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Inst_command_unit/sonRSTn_A> of sequential type is unconnected in block <mul>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <stateCurrent[1:6]> with one-hot encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 000001
+ init      | 000010
+ check_y0  | 000100
+ add       | 010000
+ shift     | 001000
+ check_cnt | 100000
+-----------------------
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Inst_shReg/siD_3> of sequential type is unconnected in block <mul>.
+WARNING:Xst:2677 - Node <Inst_shReg/siD_2> of sequential type is unconnected in block <mul>.
+WARNING:Xst:2677 - Node <Inst_shReg/siD_1> of sequential type is unconnected in block <mul>.
+WARNING:Xst:2677 - Node <Inst_shReg/siD_0> of sequential type is unconnected in block <mul>.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <Inst_command_unit/soLoad_A> is equivalent to a wire in block <mul>.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <mul> ...
+WARNING:Xst:1710 - FF/Latch <siY_1> (without init value) has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <siY_3> (without init value) has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <siY_2> (without init value) has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <siY_0> (without init value) has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_ACC/sACC_4> (without init value) has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <cnt> ...
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_command_unit/stateCurrent_FSM_FFd2> has a constant value of 0 in block <mul>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mul, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mul.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 10
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 3
+#      LUT3                        : 2
+#      LUT4                        : 2
+# FlipFlops/Latches                : 18
+#      FD                          : 5
+#      FDR                         : 3
+#      FDRE                        : 4
+#      LD                          : 2
+#      LDC                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 6
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45fgg676-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               9  out of  54576     0%  
+ Number of Slice LUTs:                    9  out of  27288     0%  
+    Number used as Logic:                 9  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     10
+   Number with an unused Flip Flop:       1  out of     10    10%  
+   Number with an unused LUT:             1  out of     10    10%  
+   Number of fully used LUT-FF pairs:     8  out of     10    80%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  16  out of    358     4%  
+    IOB Flip Flops/Latches:               9
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------+--------------------------------+-------+
+Clock Signal                           | Clock buffer(FF name)          | Load  |
+---------------------------------------+--------------------------------+-------+
+iCLK                                   | BUFGP                          | 12    |
+Inst_command_unit/stateCurrent_FSM_FFd3| NONE(Inst_command_unit/soREADY)| 6     |
+---------------------------------------+--------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 1.828ns (Maximum Frequency: 547.046MHz)
+   Minimum input arrival time before clock: 3.761ns
+   Maximum output required time after clock: 4.174ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iCLK'
+  Clock period: 1.828ns (frequency: 547.046MHz)
+  Total number of paths / destination ports: 15 / 8
+-------------------------------------------------------------------------
+Delay:               1.828ns (Levels of Logic = 1)
+  Source:            Inst_command_unit/stateCurrent_FSM_FFd6 (FF)
+  Destination:       Inst_command_unit/stateCurrent_FSM_FFd6 (FF)
+  Source Clock:      iCLK rising
+  Destination Clock: iCLK rising
+
+  Data Path: Inst_command_unit/stateCurrent_FSM_FFd6 to Inst_command_unit/stateCurrent_FSM_FFd6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   0.994  Inst_command_unit/stateCurrent_FSM_FFd6 (Inst_command_unit/stateCurrent_FSM_FFd6)
+     LUT4:I1->O            1   0.235   0.000  Inst_command_unit/stateCurrent_FSM_FFd6-In1 (Inst_command_unit/stateCurrent_FSM_FFd6-In)
+     FD:D                      0.074          Inst_command_unit/stateCurrent_FSM_FFd6
+    ----------------------------------------
+    Total                      1.828ns (0.834ns logic, 0.994ns route)
+                                       (45.6% logic, 54.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'iCLK'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              3.761ns (Levels of Logic = 2)
+  Source:            iRSTn (PAD)
+  Destination:       Inst_reg/siD_3 (FF)
+  Destination Clock: iCLK rising
+
+  Data Path: iRSTn to Inst_reg/siD_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  iRSTn_IBUF (iRSTn_IBUF)
+     INV:I->O             11   0.255   1.038  Inst_ACC/inRESETn_inv1_INV_0 (Inst_ACC/inRESETn_inv)
+     FDRE:R                    0.459          Inst_reg/siD_0
+    ----------------------------------------
+    Total                      3.761ns (2.042ns logic, 1.719ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_command_unit/stateCurrent_FSM_FFd3'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.761ns (Levels of Logic = 2)
+  Source:            iRSTn (PAD)
+  Destination:       Inst_ACC/sACC_0 (LATCH)
+  Destination Clock: Inst_command_unit/stateCurrent_FSM_FFd3 falling
+
+  Data Path: iRSTn to Inst_ACC/sACC_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  iRSTn_IBUF (iRSTn_IBUF)
+     INV:I->O             11   0.255   1.038  Inst_ACC/inRESETn_inv1_INV_0 (Inst_ACC/inRESETn_inv)
+     LDC:CLR                   0.459          Inst_ACC/sACC_0
+    ----------------------------------------
+    Total                      3.761ns (2.042ns logic, 1.719ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_command_unit/stateCurrent_FSM_FFd3'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.174ns (Levels of Logic = 1)
+  Source:            Inst_ACC/sACC_3 (LATCH)
+  Destination:       oRes<3> (PAD)
+  Source Clock:      Inst_command_unit/stateCurrent_FSM_FFd3 falling
+
+  Data Path: Inst_ACC/sACC_3 to oRes<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.681  Inst_ACC/sACC_3 (Inst_ACC/sACC_3)
+     OBUF:I->O                 2.912          oRes_3_OBUF (oRes<3>)
+    ----------------------------------------
+    Total                      4.174ns (3.493ns logic, 0.681ns route)
+                                       (83.7% logic, 16.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Inst_command_unit/stateCurrent_FSM_FFd3
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iCLK           |    1.685|         |    1.242|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iCLK
+---------------------------------------+---------+---------+---------+---------+
+                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------+---------+---------+---------+---------+
+Inst_command_unit/stateCurrent_FSM_FFd3|    2.095|         |         |         |
+iCLK                                   |    1.828|         |         |         |
+---------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.05 secs
+ 
+--> 
+
+Total memory usage is 260400 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   57 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

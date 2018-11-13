@@ -1,0 +1,8 @@
+vhdl isim_temp "shReg.vhd"
+vhdl isim_temp "reg.vhd"
+vhdl isim_temp "command_unit.vhd"
+vhdl isim_temp "cnt.vhd"
+vhdl isim_temp "add4.vhd"
+vhdl isim_temp "ACC.vhd"
+vhdl isim_temp "mul.vhd"
+vhdl isim_temp "mul_tb.vhd"

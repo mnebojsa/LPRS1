@@ -1,0 +1,7 @@
+vhdl work "shReg.vhd"
+vhdl work "reg.vhd"
+vhdl work "command_unit.vhd"
+vhdl work "cnt.vhd"
+vhdl work "add4.vhd"
+vhdl work "ACC.vhd"
+vhdl work "mul.vhd"
