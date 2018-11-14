@@ -1,0 +1,31 @@
+Command line:
+   mul_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53632
+
+Tue Nov 13 11:31:57 2018
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 829.784 Meg
+
+ Total Signals          : 82
+ Total Nets             : 93
+ Total Signal Drivers   : 39
+ Total Blocks           : 10
+ Total Primitive Blocks : 8
+ Total Processes        : 28
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 577
+In process mul.vhd:146 
+ Target Size 4 and source size 1 for array dimension 0 does not match. 
+
+
+ Total Simulation Time: 0.093601 sec
+
+ Current Memory Usage: 672.498 Meg
+
+Tue Nov 13 12:54:11 2018
+

@@ -35,25 +35,25 @@ entity shReg is
           iLOAD  : in  std_logic;
           iSE    : in  std_logic;
           iD     : in  std_logic_vector(3 downto 0);
-			 oDSR   : out std_logic;
+			 iDSR   : in std_logic;
           oQ     : out std_logic_vector(3 downto 0) );
 end shReg;
 
 architecture Behavioral of shReg is
     signal siD   : std_logic_vector(3 downto 0);
-    signal soDSR : std_logic;	 
+    signal siDSR : std_logic;	 
 begin
 
     process(iCLK)
-	     variable vData : std_logic_vector(3 downto 0);
+	     variable vData : std_logic_vector(2 downto 0);
 	 begin
 	     if rising_edge(iCLK) then
 		      if inCLRn = '0' then
                 siD <= "0000";
             elsif iSE = '1' then
-				    soDSR <= siD(3);
-                vData := siD(2 downto 0) & '0';	
-                siD <= vData;					 
+				    siDSR <= iDSR;
+                vData := siD(2 downto 0);	
+                siD <= siDSR & vData;					 
 				elsif iLOAD = '1' then
                 siD <= iD;				 
             end if;				
@@ -61,6 +61,5 @@ begin
 	 end process;
 
     oQ   <= siD;
-	 oDSR <= soDSR;
 end Behavioral;
 

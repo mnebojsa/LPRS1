@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/03standardne_kombinacione_mreze/3.13/dec3x8/dec2x4.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/03standardne_kombinacione_mreze/3.13/dec3x8/dec3x8.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.12/8.12.b/Proc_CU/CU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.12/8.12.b/Proc_CU/JK_ff.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.12/8.12.b/Proc_CU/Proc_CU_top.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

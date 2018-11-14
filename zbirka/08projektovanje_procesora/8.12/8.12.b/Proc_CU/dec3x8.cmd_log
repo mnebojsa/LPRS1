@@ -1,0 +1,1 @@
+vhdtdtfi -prj Proc_CU -o D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.12/8.12.b/Proc_CU/dec3x8.vhi -module dec3x8 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../../../03standardne_kombinacione_mreze/3.13/dec3x8/dec2x4.vhd -lib work ../../../../03standardne_kombinacione_mreze/3.13/dec3x8/dec3x8.vhd 

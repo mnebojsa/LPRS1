@@ -1,0 +1,6 @@
+vhdl work "JK_ff.vhd"
+vhdl work "../../../../03standardne_kombinacione_mreze/3.13/dec3x8/dec2x4.vhd"
+vhdl work "CU.vhd"
+vhdl work "../../../../03standardne_kombinacione_mreze/3.13/dec3x8/dec3x8.vhd"
+vhdl work "Proc_CU_top.vhd"
+vhdl work "procCU_tb.vhd"

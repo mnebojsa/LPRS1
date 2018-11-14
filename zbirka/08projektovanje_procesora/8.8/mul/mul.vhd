@@ -55,7 +55,7 @@ architecture RTL of mul is
 		    iLOAD  : in  std_logic;
 		    iSE    : in  std_logic;
 		    iD     : in  std_logic_vector(3 downto 0); 
-		    oDSR   : out std_logic;			 
+		    iDSR   : out std_logic;			 
 		    oQ     : out std_logic_vector(3 downto 0) );
     end component;
 
@@ -100,7 +100,7 @@ architecture RTL of mul is
     signal sWEX      : std_logic;
 	 signal sWEY      : std_logic;
 	 signal sShEn     : std_logic;
-    signal soDSR     : std_logic;	
+    signal siDSR     : std_logic;	
     signal sCntEn    : std_logic;
     signal sCntQ     : std_logic_vector(1 downto 0);
     signal sCntTSE   : std_logic;	
@@ -129,7 +129,7 @@ Inst_shReg:
 		        iLOAD  => sWEY,
 		        iSE    => sShEn,
 		        iD     => iY,
-				  oDSR   => soDSR,
+				  iDSR   => siDSR,
 		        oQ     => soQY );	
 
 Inst_cnt:
@@ -148,14 +148,14 @@ Inst_add4:
     add4 
 	 port map( iX   => soQX,
 		        iY   => siY,
-		        oRes => sAccIn(4 downto 0) );				  
+		        oRes => sAccIn(4 downto 0) );					  
 
 Inst_command_unit:
     command_unit
 	 port map( iCLK      => iCLK,
 		        inRESETn  => iRSTn,
 		        iSTART    => iSTART,
-		        iY0       => soDSR,
+		        iY0       => siDSR,
 		        iCNT_0    => sCntTSE,
 		        oLoad_Cnt => sCntEn,
 		        oLoad_X   => sWEX,
