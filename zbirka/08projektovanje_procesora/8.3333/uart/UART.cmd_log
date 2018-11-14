@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.3333/uart/UART.xst" -ofn "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.3333/uart/UART.syr" 
+xst -intstyle ise -ifn "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.3333/uart/UART.xst" -ofn "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.3333/uart/UART.syr" 

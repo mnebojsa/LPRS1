@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
@@ -7,16 +7,18 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Proc_CU_top - Behavioral D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.12|8.12.b|Proc_CU|Proc_CU_top.vhd/Inst_CU - CU - Behavioral</ClosedNode>
+         <ClosedNode>/Proc_CU_top - Behavioral D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.12|8.12.b|Proc_CU|Proc_CU_top.vhd/Inst_dec3x8 - dec3x8 - Behavioral</ClosedNode>
          <ClosedNode>/dec3x8 - Behavioral D:|LPRS1_git|LPRS1|zbirka|03standardne_kombinacione_mreze|3.13|dec3x8|dec3x8.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Proc_CU_top - Behavioral (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.12/8.12.b/Proc_CU/Proc_CU_top.vhd)</SelectedItem>
+         <SelectedItem>Inst_CU - CU - Behavioral (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.12/8.12.b/Proc_CU/CU.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000014b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000014b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Proc_CU_top - Behavioral (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.12/8.12.b/Proc_CU/Proc_CU_top.vhd)</CurrentItem>
+      <CurrentItem>Inst_CU - CU - Behavioral (D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.12/8.12.b/Proc_CU/CU.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -24,13 +26,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -63,19 +65,20 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>View Technology Schematic</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>View Technology Schematic</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/CU_tb - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.12|8.12.b|Proc_CU|CU_tb.vhd</ClosedNode>
          <ClosedNode>/JK_tb - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.12|8.12.b|Proc_CU|JK_tb.vhd</ClosedNode>
+         <ClosedNode>/procCU_tb - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.12|8.12.b|Proc_CU|procCU_tb.vhd/uut - Proc_CU_top - Behavioral</ClosedNode>
          <ClosedNode>/procCU_tb - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.12|8.12.b|Proc_CU|procCU_tb.vhd/uut - Proc_CU_top - Behavioral/Inst_CU - CU - Behavioral</ClosedNode>
          <ClosedNode>/procCU_tb - behavior D:|LPRS1_git|LPRS1|zbirka|08projektovanje_procesora|8.12|8.12.b|Proc_CU|procCU_tb.vhd/uut - Proc_CU_top - Behavioral/Inst_dec3x8 - dec3x8 - Behavioral</ClosedNode>
       </ClosedNodes>
@@ -94,27 +97,27 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
 </Project>
