@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-14T14:59:07</DateModified>
+  <DateModified>2018-11-15T11:09:34</DateModified>
   <ModuleName>top</ModuleName>
   <SummaryTimeStamp>2018-11-14T14:21:22</SummaryTimeStamp>
   <SavedFilePath>D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub\</ImplementationReportsDirectory>
   <DateInitialized>2018-11-14T14:10:09</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

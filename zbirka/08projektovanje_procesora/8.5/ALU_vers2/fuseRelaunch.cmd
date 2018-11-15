@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.5/ALU_vers2/ALU_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.5/ALU_vers2/ALU_tb_beh.prj" "work.ALU_tb" 

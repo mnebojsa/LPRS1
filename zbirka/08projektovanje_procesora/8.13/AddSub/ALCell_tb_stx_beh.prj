@@ -1,0 +1,3 @@
+vhdl isim_temp "fullAdder.vhd"
+vhdl isim_temp "ALCell.vhd"
+vhdl isim_temp "ALCell_tb.vhd"

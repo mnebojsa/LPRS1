@@ -33,6 +33,7 @@ entity ALU is
     port( iSel : in  std_logic_vector(4 downto 0);
 	       iA   : in  std_logic_vector(3 downto 0);
 			 iB   : in  std_logic_vector(3 downto 0);
+			 iC   : in  std_logic;
 			 oH   : out std_logic_vector(3 downto 0);
           oC   : out std_logic );
 end ALU;
@@ -60,23 +61,13 @@ architecture RTL of ALU is
     signal carry2 : std_logic;
     signal carry3 : std_logic;	 
 begin
-
-    with iSel(2 downto 0) select carry0 <=
-        '0'    when "000",
-		  '1'    when "001",
-		  '0'    when "010",
-		  '0'    when "011",
-        '0'    when "100",
-		  '1'    when "101",
-		  '0'    when "110",
-		  '0'    when "111",	
-		  '0'    when others;			  
+		  
 
 Inst_ALCell0:
     ALCell
     port map( iA   => iA(0),
 		        iB   => iB(0),
-		        iC   => carry0,
+		        iC   => iC,
 		        iSel => iSel(2 downto 0),
 		        oFnc => soFnc(0),
 		        oC   => carry1);

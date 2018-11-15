@@ -1,0 +1,9 @@
+[Inputs]
+=iX0[3:0]=
+=iX1[3:0]=
+=iX2[3:0]=
+=iX3[3:0]=
+=iSEL[1:0]=
+[Outputs]
+=oY[3:0]=
+[BiDir]

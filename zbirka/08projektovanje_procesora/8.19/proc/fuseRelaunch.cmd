@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.19/proc/reg_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.19/proc/reg_tb_beh.prj" "work.reg_tb" 

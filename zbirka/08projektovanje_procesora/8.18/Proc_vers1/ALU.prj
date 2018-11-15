@@ -1,0 +1,4 @@
+vhdl work "fullAdder.vhd"
+vhdl work "shift.vhd"
+vhdl work "ALCell.vhd"
+vhdl work "ALU.vhd"

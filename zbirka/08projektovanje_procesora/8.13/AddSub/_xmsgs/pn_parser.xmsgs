@@ -8,7 +8,22 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/top_tb.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/ALCell.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/ALU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/CU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/fullAdder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/shift.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/top.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

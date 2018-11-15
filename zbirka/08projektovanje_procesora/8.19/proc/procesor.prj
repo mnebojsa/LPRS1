@@ -1,0 +1,6 @@
+vhdl work "reg.vhd"
+vhdl work "muc4vx1v.vhd"
+vhdl work "decoder.vhd"
+vhdl work "cnt.vhd"
+vhdl work "ALU.vhd"
+vhdl work "procesor.vhd"

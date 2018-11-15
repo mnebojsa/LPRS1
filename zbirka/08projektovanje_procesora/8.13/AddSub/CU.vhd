@@ -107,27 +107,42 @@ set_current_state_process:
 	 begin
 	     case stateCurrent is
 		      when IDLE           => 
-                soOper <= "111";			
+                soOper <= "ZZZ";			
 		      when CONV_B_SIGN    =>
-				
+				    soOper <= "ZZZ";
 		      when CHECK_SIGNS    =>
-
+                soOper <= "ZZZ";
 		      when ADD            =>
-					 soOper <= "000";				
-		      when SUB            =>
-					 soOper <= "001";				
-		      when CHECK_CARRY    =>
-				
-		      when Sec_COMPLEMENT =>
-					 soOper <= "110";				
-        end case;					 
-	 end process;
-
+					 soOper <= "000";	
 	 oA(3 downto 0) <= soA(3 downto 0);
 	 oB(3 downto 0) <= soB(3 downto 0);
 	 oA(4)          <= soA(4);
 	 oB(4)          <= soB(4);	 
-    oOper          <= soOper;
+    oOper          <= soOper;					 
+		      when SUB            =>
+					 soOper <= "001";	
+	 oA(3 downto 0) <= soA(3 downto 0);
+	 oB(3 downto 0) <= soB(3 downto 0);
+	 oA(4)          <= soA(4);
+	 oB(4)          <= soB(4);	 
+    oOper          <= soOper;					 
+		      when CHECK_CARRY    =>
+				
+		      when Sec_COMPLEMENT =>
+					 soOper <= "110";	
+	 oA(3 downto 0) <= soA(3 downto 0);
+	 oB(3 downto 0) <= soB(3 downto 0);
+	 oA(4)          <= soA(4);
+	 oB(4)          <= soB(4);	 
+    oOper          <= soOper;					 
+        end case;					 
+	 end process;
+
+--	 oA(3 downto 0) <= soA(3 downto 0);
+--	 oB(3 downto 0) <= soB(3 downto 0);
+--	 oA(4)          <= soA(4);
+--	 oB(4)          <= soB(4);	 
+--    oOper          <= soOper;
 	 
 end Behavioral;
 

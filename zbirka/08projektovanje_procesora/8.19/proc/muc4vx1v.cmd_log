@@ -1,0 +1,3 @@
+vhdtdtfi -lib work muc4vx1v.vhd -prj proc -o muc4vx1v.spl -module muc4vx1v -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 muc4vx1v.spl D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.19/proc/muc4vx1v.sym 
+vhdtdtfi -prj proc -o D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.19/proc/muc4vx1v.vhi -module muc4vx1v -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work muc4vx1v.vhd 

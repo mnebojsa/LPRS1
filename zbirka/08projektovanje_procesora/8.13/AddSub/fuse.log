@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/top_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/top_tb_beh.prj" "work.top_tb" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/ALU_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/ALU_tb_beh.prj" "work.ALU_tb" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -6,24 +6,19 @@ Determining compilation order of HDL files
 Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/fullAdder.vhd" into library work
 Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/shift.vhd" into library work
 Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/ALCell.vhd" into library work
-Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/CU.vhd" into library work
 Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/ALU.vhd" into library work
-Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/top.vhd" into library work
-Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/top_tb.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/ALU_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity CU [cu_default]
 Compiling architecture dataflow of entity fullAdder [fulladder_default]
 Compiling architecture dataflow of entity ALCell [alcell_default]
 Compiling architecture dataflow of entity shift [shift_default]
 Compiling architecture rtl of entity ALU [alu_default]
-Compiling architecture behavioral of entity top [top_default]
-Compiling architecture behavior of entity top_tb
+Compiling architecture behavior of entity alu_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 15 VHDL Units
-Built simulation executable D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/top_tb_isim_beh.exe
-Fuse Memory Usage: 29684 KB
-Fuse CPU Usage: 498 ms
+Compiled 11 VHDL Units
+Built simulation executable D:/LPRS1_git/LPRS1/zbirka/08projektovanje_procesora/8.13/AddSub/ALU_tb_isim_beh.exe
+Fuse Memory Usage: 29520 KB
+Fuse CPU Usage: 452 ms
