@@ -1,0 +1,3 @@
+vhdtdtfi -prj procesor -o D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/DEC.vhi -module DEC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DEC.vhd 
+vhdtdtfi -prj procesor -o D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/DEC.vhi -module DEC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DEC.vhd 
+vhdtdtfi -prj procesor -o D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/DEC.vhi -module DEC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DEC.vhd 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procRamRom/top_m_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procRamRom/top_m_tb_beh.prj" "work.top_m_tb" 

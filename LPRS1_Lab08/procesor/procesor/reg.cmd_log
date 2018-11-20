@@ -1,0 +1,1 @@
+vhdtdtfi -prj procesor -o D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/reg.vhi -module reg -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work register.vhd 
