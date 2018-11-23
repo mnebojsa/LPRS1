@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file shift.vhd -- 15:06:19 11/08/2018
+-- VHDL Instantiation Created from source file shift.vhd -- 09:23:59 11/30/2018
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types

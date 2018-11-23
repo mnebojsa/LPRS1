@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: top_module.prj
 
@@ -431,8 +431,82 @@ Optimizing unit <RAM_mem> ...
 Optimizing unit <procesor> ...
 
 Optimizing unit <CU> ...
-WARNING:Xst:1710 - FF/Latch <Inst_procesor/Inst_InstructionReg/sData_9> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_1> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_2> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_3> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_4> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_5> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_6> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_7> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_8> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_9> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_10> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_11> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_12> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_13> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_14> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_15> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_0> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_1> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_2> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_CU/REG_IN_2> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_CU/REG_SEL_2> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_0> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_1> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_2> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_3> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_4> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_5> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_6> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_7> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_8> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_9> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_10> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_11> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_12> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_13> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_14> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[4].REGX/sData_15> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[5].REGX/sData_0> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_6> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_7> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_8> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_9> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_10> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_11> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_12> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_13> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_14> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_15> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_InstructionReg/sData_2> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_InstructionReg/sData_5> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_InstructionReg/sData_8> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_InstructionReg/sData_9> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_RAM_mem/oDATA_0> (without init value) has a constant value of 1 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_RAM_mem/oDATA_3> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_RAM_mem/oDATA_5> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_RAM_mem/oDATA_7> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_3> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_4> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_5> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_6> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_7> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_8> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_9> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_10> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_11> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_12> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_13> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_14> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[6].REGX/sData_15> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_0> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_1> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_2> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_3> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_4> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/GEN_REG[7].REGX/sData_5> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_CU/sINSTR_WORD_2> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_CU/sINSTR_WORD_5> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_CU/sINSTR_WORD_8> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_procesor/Inst_CU/sINSTR_WORD_9> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <Inst_procesor/Inst_cnt/sCnt_15> of sequential type is unconnected in block <top_module>.
@@ -448,13 +522,11 @@ WARNING:Xst:2677 - Node <Inst_procesor/Inst_cnt/sCnt_6> of sequential type is un
 WARNING:Xst:2677 - Node <Inst_procesor/Inst_cnt/sCnt_5> of sequential type is unconnected in block <top_module>.
 WARNING:Xst:2677 - Node <Inst_procesor/Inst_cnt/sCnt_4> of sequential type is unconnected in block <top_module>.
 WARNING:Xst:2677 - Node <Inst_procesor/Inst_cnt/sCnt_3> of sequential type is unconnected in block <top_module>.
-WARNING:Xst:1710 - FF/Latch <Inst_RAM_mem/oDATA_7> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Inst_RAM_mem/oDATA_5> (without init value) has a constant value of 0 in block <top_module>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <Inst_RAM_mem/oDATA_8> in Unit <top_module> is equivalent to the following 2 FFs/Latches, which will be removed : <Inst_RAM_mem/oDATA_6> <Inst_RAM_mem/oDATA_4> 
+INFO:Xst:2261 - The FF/Latch <Inst_RAM_mem/oDATA_8> in Unit <top_module> is equivalent to the following 3 FFs/Latches, which will be removed : <Inst_RAM_mem/oDATA_6> <Inst_RAM_mem/oDATA_4> <Inst_RAM_mem/oDATA_2> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top_module, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block top_module, actual ratio is 0.
 FlipFlop Inst_RAM_mem/oDATA_8 has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -463,8 +535,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 181
- Flip-Flops                                            : 181
+# Registers                                            : 112
+ Flip-Flops                                            : 112
 
 =========================================================================
 
@@ -487,26 +559,26 @@ Top Level Output File Name         : top_module.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 256
+# BELS                             : 174
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 2
 #      LUT1                        : 2
-#      LUT2                        : 26
-#      LUT3                        : 25
-#      LUT4                        : 16
-#      LUT5                        : 22
-#      LUT6                        : 98
+#      LUT2                        : 20
+#      LUT3                        : 41
+#      LUT4                        : 10
+#      LUT5                        : 21
+#      LUT6                        : 32
 #      MUXCY                       : 17
-#      MUXF7                       : 26
+#      MUXF7                       : 8
 #      VCC                         : 1
 #      XORCY                       : 19
-# FlipFlops/Latches                : 203
+# FlipFlops/Latches                : 130
 #      FD                          : 2
-#      FDE                         : 6
+#      FDE                         : 3
 #      FDR                         : 2
-#      FDRE                        : 171
-#      LDC                         : 13
-#      LDE_1                       : 8
+#      FDRE                        : 105
+#      LDC                         : 11
+#      LDE_1                       : 6
 #      LDP                         : 1
 # Clock Buffers                    : 2
 #      BUFG                        : 1
@@ -522,16 +594,16 @@ Selected Device : 6slx45fgg676-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             203  out of  54576     0%  
- Number of Slice LUTs:                  192  out of  27288     0%  
-    Number used as Logic:               192  out of  27288     0%  
+ Number of Slice Registers:             130  out of  54576     0%  
+ Number of Slice LUTs:                  128  out of  27288     0%  
+    Number used as Logic:               128  out of  27288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    292
-   Number with an unused Flip Flop:      89  out of    292    30%  
-   Number with an unused LUT:           100  out of    292    34%  
-   Number of fully used LUT-FF pairs:   103  out of    292    35%  
-   Number of unique control sets:        25
+ Number of LUT Flip Flop pairs used:    176
+   Number with an unused Flip Flop:      46  out of    176    26%  
+   Number with an unused LUT:            48  out of    176    27%  
+   Number of fully used LUT-FF pairs:    82  out of    176    46%  
+   Number of unique control sets:        21
 
 IO Utilization: 
  Number of IOs:                          19
@@ -561,14 +633,14 @@ Clock Information:
 -------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+-------+
 Clock Signal                                                                                                                   | Clock buffer(FF name)                   | Load  |
 -------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------+-------+
-iCLK                                                                                                                           | BUFGP                                   | 181   |
-Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22_o_Mux_32_o(Inst_procesor/Inst_CU/Mmux_stateCurrent[2]_PWR_22_o_Mux_32_o11:O)      | NONE(*)(Inst_procesor/Inst_CU/REG_SEL_0)| 3     |
+iCLK                                                                                                                           | BUFGP                                   | 112   |
+Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22_o_Mux_32_o(Inst_procesor/Inst_CU/Mmux_stateCurrent[2]_PWR_22_o_Mux_32_o11:O)      | NONE(*)(Inst_procesor/Inst_CU/REG_SEL_0)| 2     |
 Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o(Inst_procesor/Inst_CU/Mmux_stateCurrent[2]_PWR_41_o_Mux_70_o11:O)      | NONE(*)(Inst_procesor/Inst_CU/DATA_SEL) | 1     |
-Inst_procesor/Inst_CU/stateCurrent[2]_PWR_28_o_Mux_44_o(Inst_procesor/Inst_CU/Mmux_stateCurrent[2]_PWR_28_o_Mux_44_o11:O)      | NONE(*)(Inst_procesor/Inst_CU/REG_IN_0) | 3     |
+Inst_procesor/Inst_CU/stateCurrent[2]_PWR_28_o_Mux_44_o(Inst_procesor/Inst_CU/Mmux_stateCurrent[2]_PWR_28_o_Mux_44_o11:O)      | NONE(*)(Inst_procesor/Inst_CU/REG_IN_0) | 2     |
 Inst_procesor/Inst_CU/stateCurrent[2]_PWR_37_o_Mux_62_o(Inst_procesor/Inst_CU/stateCurrent__n0171<4>1:O)                       | NONE(*)(Inst_procesor/Inst_CU/ALU_SEL)  | 2     |
 Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_56_o(Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_56_o1:O)| NONE(*)(Inst_procesor/Inst_CU/REG_EN)   | 1     |
 Inst_procesor/Inst_CU/stateCurrent[2]_PWR_19_o_Mux_26_o(Inst_procesor/Inst_CU/stateCurrent__n0171<0>1:O)                       | NONE(*)(Inst_procesor/Inst_CU/PC_CLEAR) | 1     |
-iRST                                                                                                                           | IBUF+BUFG                               | 8     |
+iRST                                                                                                                           | IBUF+BUFG                               | 6     |
 Inst_procesor/Inst_CU/stateCurrent[2]_PWR_39_o_Mux_66_o(Inst_procesor/Inst_CU/stateCurrent__n0171<6>1:O)                       | NONE(*)(Inst_procesor/Inst_CU/G_SEL)    | 1     |
 Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_60_o(Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_60_o1:O)| NONE(*)(Inst_procesor/Inst_CU/ACC_WE)   | 1     |
 Inst_procesor/Inst_CU/stateCurrent[2]_PWR_20_o_Mux_28_o(Inst_procesor/Inst_CU/stateCurrent__n0171<2>1:O)                       | NONE(*)(Inst_procesor/Inst_CU/PC_EN)    | 1     |
@@ -586,9 +658,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.030ns (Maximum Frequency: 248.139MHz)
-   Minimum input arrival time before clock: 5.313ns
-   Maximum output required time after clock: 10.490ns
+   Minimum period: 3.719ns (Maximum Frequency: 268.889MHz)
+   Minimum input arrival time before clock: 5.181ns
+   Maximum output required time after clock: 8.971ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -597,33 +669,39 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'iCLK'
-  Clock period: 4.030ns (frequency: 248.139MHz)
-  Total number of paths / destination ports: 3946 / 183
+  Clock period: 3.719ns (frequency: 268.889MHz)
+  Total number of paths / destination ports: 1660 / 114
 -------------------------------------------------------------------------
-Delay:               4.030ns (Levels of Logic = 3)
+Delay:               3.719ns (Levels of Logic = 9)
   Source:            Inst_RAM_mem/oDATA_8 (FF)
-  Destination:       Inst_procesor/Inst_RegA/sData_4 (FF)
+  Destination:       Inst_procesor/Inst_RegG/sData_15 (FF)
   Source Clock:      iCLK rising
   Destination Clock: iCLK rising
 
-  Data Path: Inst_RAM_mem/oDATA_8 to Inst_procesor/Inst_RegA/sData_4
+  Data Path: Inst_RAM_mem/oDATA_8 to Inst_procesor/Inst_RegG/sData_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             19   0.525   1.261  Inst_RAM_mem/oDATA_8 (Inst_RAM_mem/oDATA_8)
-     LUT6:I5->O            2   0.254   0.726  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_79 (Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_79)
-     LUT6:I5->O            1   0.254   0.682  Inst_procesor/Inst_multiplekser/Mmux_oData111 (Inst_procesor/Inst_multiplekser/Mmux_oData11)
-     LUT5:I4->O           10   0.254   0.000  Inst_procesor/Inst_multiplekser/Mmux_oData112 (odummy_4_OBUF)
-     FDRE:D                    0.074          Inst_procesor/Inst_RegA/sData_4
+     FDE:C->Q             17   0.525   1.209  Inst_RAM_mem/oDATA_8 (Inst_RAM_mem/oDATA_8)
+     LUT6:I5->O            1   0.254   0.000  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_7 (Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_7)
+     MUXF7:I0->O           2   0.163   0.726  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_5_f7 (Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_5_f7)
+     LUT6:I5->O            1   0.254   0.000  Inst_procesor/Inst_ALU/Maddsub_soResult_lut<10> (Inst_procesor/Inst_ALU/Maddsub_soResult_lut<10>)
+     MUXCY:S->O            1   0.215   0.000  Inst_procesor/Inst_ALU/Maddsub_soResult_cy<10> (Inst_procesor/Inst_ALU/Maddsub_soResult_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_procesor/Inst_ALU/Maddsub_soResult_cy<11> (Inst_procesor/Inst_ALU/Maddsub_soResult_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_procesor/Inst_ALU/Maddsub_soResult_cy<12> (Inst_procesor/Inst_ALU/Maddsub_soResult_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_procesor/Inst_ALU/Maddsub_soResult_cy<13> (Inst_procesor/Inst_ALU/Maddsub_soResult_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  Inst_procesor/Inst_ALU/Maddsub_soResult_cy<14> (Inst_procesor/Inst_ALU/Maddsub_soResult_cy<14>)
+     XORCY:CI->O           1   0.206   0.000  Inst_procesor/Inst_ALU/Maddsub_soResult_xor<15> (Inst_procesor/sRESULT<15>)
+     FDRE:D                    0.074          Inst_procesor/Inst_RegG/sData_15
     ----------------------------------------
-    Total                      4.030ns (1.361ns logic, 2.669ns route)
-                                       (33.8% logic, 66.2% route)
+    Total                      3.719ns (1.784ns logic, 1.935ns route)
+                                       (48.0% logic, 52.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'iCLK'
-  Total number of paths / destination ports: 190 / 189
+  Total number of paths / destination ports: 119 / 118
 -------------------------------------------------------------------------
-Offset:              5.313ns (Levels of Logic = 2)
+Offset:              5.181ns (Levels of Logic = 2)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_cnt/sCnt_2 (FF)
   Destination Clock: iCLK rising
@@ -632,18 +710,18 @@ Offset:              5.313ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.511  iRST_IBUF (iRST_IBUF)
+     IBUF:I->O           120   1.328   2.379  iRST_IBUF (iRST_IBUF)
      LUT2:I0->O            3   0.250   0.765  Inst_procesor/Inst_cnt/iRST_iPC_CLR_OR_1_o1 (Inst_procesor/Inst_cnt/iRST_iPC_CLR_OR_1_o)
      FDRE:R                    0.459          Inst_procesor/Inst_cnt/sCnt_0
     ----------------------------------------
-    Total                      5.313ns (2.037ns logic, 3.276ns route)
-                                       (38.3% logic, 61.7% route)
+    Total                      5.181ns (2.037ns logic, 3.144ns route)
+                                       (39.3% logic, 60.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22_o_Mux_32_o'
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.189ns (Levels of Logic = 1)
+Offset:              4.057ns (Levels of Logic = 1)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_CU/REG_SEL_0 (LATCH)
   Destination Clock: Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22_o_Mux_32_o falling
@@ -652,17 +730,17 @@ Offset:              4.189ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.402  iRST_IBUF (iRST_IBUF)
-     LDC:CLR                   0.459          Inst_procesor/Inst_CU/REG_SEL_2
+     IBUF:I->O           120   1.328   2.270  iRST_IBUF (iRST_IBUF)
+     LDC:CLR                   0.459          Inst_procesor/Inst_CU/REG_SEL_1
     ----------------------------------------
-    Total                      4.189ns (1.787ns logic, 2.402ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      4.057ns (1.787ns logic, 2.270ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.189ns (Levels of Logic = 1)
+Offset:              4.057ns (Levels of Logic = 1)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_CU/DATA_SEL (LATCH)
   Destination Clock: Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o falling
@@ -671,17 +749,17 @@ Offset:              4.189ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.402  iRST_IBUF (iRST_IBUF)
+     IBUF:I->O           120   1.328   2.270  iRST_IBUF (iRST_IBUF)
      LDC:CLR                   0.459          Inst_procesor/Inst_CU/DATA_SEL
     ----------------------------------------
-    Total                      4.189ns (1.787ns logic, 2.402ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      4.057ns (1.787ns logic, 2.270ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_28_o_Mux_44_o'
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.189ns (Levels of Logic = 1)
+Offset:              4.057ns (Levels of Logic = 1)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_CU/REG_IN_0 (LATCH)
   Destination Clock: Inst_procesor/Inst_CU/stateCurrent[2]_PWR_28_o_Mux_44_o falling
@@ -690,17 +768,17 @@ Offset:              4.189ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.402  iRST_IBUF (iRST_IBUF)
-     LDC:CLR                   0.459          Inst_procesor/Inst_CU/REG_IN_2
+     IBUF:I->O           120   1.328   2.270  iRST_IBUF (iRST_IBUF)
+     LDC:CLR                   0.459          Inst_procesor/Inst_CU/REG_IN_1
     ----------------------------------------
-    Total                      4.189ns (1.787ns logic, 2.402ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      4.057ns (1.787ns logic, 2.270ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_37_o_Mux_62_o'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.189ns (Levels of Logic = 1)
+Offset:              4.057ns (Levels of Logic = 1)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_CU/ALU_SEL (LATCH)
   Destination Clock: Inst_procesor/Inst_CU/stateCurrent[2]_PWR_37_o_Mux_62_o falling
@@ -709,17 +787,17 @@ Offset:              4.189ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.402  iRST_IBUF (iRST_IBUF)
+     IBUF:I->O           120   1.328   2.270  iRST_IBUF (iRST_IBUF)
      LDC:CLR                   0.459          Inst_procesor/Inst_CU/RESULT_WE
     ----------------------------------------
-    Total                      4.189ns (1.787ns logic, 2.402ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      4.057ns (1.787ns logic, 2.270ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_56_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.189ns (Levels of Logic = 1)
+Offset:              4.057ns (Levels of Logic = 1)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_CU/REG_EN (LATCH)
   Destination Clock: Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_56_o falling
@@ -728,17 +806,17 @@ Offset:              4.189ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.402  iRST_IBUF (iRST_IBUF)
+     IBUF:I->O           120   1.328   2.270  iRST_IBUF (iRST_IBUF)
      LDC:CLR                   0.459          Inst_procesor/Inst_CU/REG_EN
     ----------------------------------------
-    Total                      4.189ns (1.787ns logic, 2.402ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      4.057ns (1.787ns logic, 2.270ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_19_o_Mux_26_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.189ns (Levels of Logic = 1)
+Offset:              4.057ns (Levels of Logic = 1)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_CU/PC_CLEAR (LATCH)
   Destination Clock: Inst_procesor/Inst_CU/stateCurrent[2]_PWR_19_o_Mux_26_o falling
@@ -747,17 +825,17 @@ Offset:              4.189ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.402  iRST_IBUF (iRST_IBUF)
+     IBUF:I->O           120   1.328   2.270  iRST_IBUF (iRST_IBUF)
      LDP:PRE                   0.459          Inst_procesor/Inst_CU/PC_CLEAR
     ----------------------------------------
-    Total                      4.189ns (1.787ns logic, 2.402ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      4.057ns (1.787ns logic, 2.270ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_39_o_Mux_66_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.189ns (Levels of Logic = 1)
+Offset:              4.057ns (Levels of Logic = 1)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_CU/G_SEL (LATCH)
   Destination Clock: Inst_procesor/Inst_CU/stateCurrent[2]_PWR_39_o_Mux_66_o falling
@@ -766,17 +844,17 @@ Offset:              4.189ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.402  iRST_IBUF (iRST_IBUF)
+     IBUF:I->O           120   1.328   2.270  iRST_IBUF (iRST_IBUF)
      LDC:CLR                   0.459          Inst_procesor/Inst_CU/G_SEL
     ----------------------------------------
-    Total                      4.189ns (1.787ns logic, 2.402ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      4.057ns (1.787ns logic, 2.270ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_60_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.189ns (Levels of Logic = 1)
+Offset:              4.057ns (Levels of Logic = 1)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_CU/ACC_WE (LATCH)
   Destination Clock: Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_60_o falling
@@ -785,17 +863,17 @@ Offset:              4.189ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.402  iRST_IBUF (iRST_IBUF)
+     IBUF:I->O           120   1.328   2.270  iRST_IBUF (iRST_IBUF)
      LDC:CLR                   0.459          Inst_procesor/Inst_CU/ACC_WE
     ----------------------------------------
-    Total                      4.189ns (1.787ns logic, 2.402ns route)
-                                       (42.7% logic, 57.3% route)
+    Total                      4.057ns (1.787ns logic, 2.270ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_20_o_Mux_28_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.189ns (Levels of Logic = 1)
+Offset:              4.057ns (Levels of Logic = 1)
   Source:            iRST (PAD)
   Destination:       Inst_procesor/Inst_CU/PC_EN (LATCH)
   Destination Clock: Inst_procesor/Inst_CU/stateCurrent[2]_PWR_20_o_Mux_28_o falling
@@ -804,37 +882,17 @@ Offset:              4.189ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           188   1.328   2.402  iRST_IBUF (iRST_IBUF)
+     IBUF:I->O           120   1.328   2.270  iRST_IBUF (iRST_IBUF)
      LDC:CLR                   0.459          Inst_procesor/Inst_CU/PC_EN
     ----------------------------------------
-    Total                      4.189ns (1.787ns logic, 2.402ns route)
-                                       (42.7% logic, 57.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o'
-  Total number of paths / destination ports: 16 / 16
--------------------------------------------------------------------------
-Offset:              7.123ns (Levels of Logic = 2)
-  Source:            Inst_procesor/Inst_CU/DATA_SEL (LATCH)
-  Destination:       odummy<15> (PAD)
-  Source Clock:      Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o falling
-
-  Data Path: Inst_procesor/Inst_CU/DATA_SEL to odummy<15>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q             62   0.581   2.369  Inst_procesor/Inst_CU/DATA_SEL (Inst_procesor/Inst_CU/DATA_SEL)
-     LUT6:I0->O           10   0.254   1.007  Inst_procesor/Inst_multiplekser/Mmux_oData16 (odummy_9_OBUF)
-     OBUF:I->O                 2.912          odummy_9_OBUF (odummy<9>)
-    ----------------------------------------
-    Total                      7.123ns (3.747ns logic, 3.376ns route)
-                                       (52.6% logic, 47.4% route)
+    Total                      4.057ns (1.787ns logic, 2.270ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_39_o_Mux_66_o'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              7.145ns (Levels of Logic = 2)
+Offset:              6.731ns (Levels of Logic = 2)
   Source:            Inst_procesor/Inst_CU/G_SEL (LATCH)
   Destination:       odummy<15> (PAD)
   Source Clock:      Inst_procesor/Inst_CU/stateCurrent[2]_PWR_39_o_Mux_66_o falling
@@ -843,57 +901,77 @@ Offset:              7.145ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q             68   0.581   2.391  Inst_procesor/Inst_CU/G_SEL (Inst_procesor/Inst_CU/G_SEL)
-     LUT6:I1->O           10   0.254   1.007  Inst_procesor/Inst_multiplekser/Mmux_oData16 (odummy_9_OBUF)
-     OBUF:I->O                 2.912          odummy_9_OBUF (odummy<9>)
+     LDC:G->Q             40   0.581   2.109  Inst_procesor/Inst_CU/G_SEL (Inst_procesor/Inst_CU/G_SEL)
+     LUT6:I0->O            6   0.254   0.875  Inst_procesor/Inst_multiplekser/Mmux_oData101 (odummy_3_OBUF)
+     OBUF:I->O                 2.912          odummy_3_OBUF (odummy<3>)
     ----------------------------------------
-    Total                      7.145ns (3.747ns logic, 3.398ns route)
-                                       (52.4% logic, 47.6% route)
+    Total                      6.731ns (3.747ns logic, 2.984ns route)
+                                       (55.7% logic, 44.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'iCLK'
-  Total number of paths / destination ports: 164 / 16
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o'
+  Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
-Offset:              7.875ns (Levels of Logic = 4)
-  Source:            Inst_RAM_mem/oDATA_8 (FF)
-  Destination:       odummy<4> (PAD)
-  Source Clock:      iCLK rising
+Offset:              6.597ns (Levels of Logic = 2)
+  Source:            Inst_procesor/Inst_CU/DATA_SEL (LATCH)
+  Destination:       odummy<0> (PAD)
+  Source Clock:      Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o falling
 
-  Data Path: Inst_RAM_mem/oDATA_8 to odummy<4>
+  Data Path: Inst_procesor/Inst_CU/DATA_SEL to odummy<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             19   0.525   1.261  Inst_RAM_mem/oDATA_8 (Inst_RAM_mem/oDATA_8)
-     LUT6:I5->O            2   0.254   0.726  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_79 (Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_79)
-     LUT6:I5->O            1   0.254   0.682  Inst_procesor/Inst_multiplekser/Mmux_oData111 (Inst_procesor/Inst_multiplekser/Mmux_oData11)
-     LUT5:I4->O           10   0.254   1.007  Inst_procesor/Inst_multiplekser/Mmux_oData112 (odummy_4_OBUF)
-     OBUF:I->O                 2.912          odummy_4_OBUF (odummy<4>)
+     LDC:G->Q             32   0.581   1.975  Inst_procesor/Inst_CU/DATA_SEL (Inst_procesor/Inst_CU/DATA_SEL)
+     LUT6:I0->O            6   0.254   0.875  Inst_procesor/Inst_multiplekser/Mmux_oData17 (odummy_0_OBUF)
+     OBUF:I->O                 2.912          odummy_0_OBUF (odummy<0>)
     ----------------------------------------
-    Total                      7.875ns (4.199ns logic, 3.676ns route)
-                                       (53.3% logic, 46.7% route)
+    Total                      6.597ns (3.747ns logic, 2.850ns route)
+                                       (56.8% logic, 43.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22_o_Mux_32_o'
-  Total number of paths / destination ports: 186 / 16
+  Total number of paths / destination ports: 104 / 16
 -------------------------------------------------------------------------
-Offset:              10.490ns (Levels of Logic = 5)
+Offset:              8.971ns (Levels of Logic = 5)
   Source:            Inst_procesor/Inst_CU/REG_SEL_0 (LATCH)
-  Destination:       odummy<14> (PAD)
+  Destination:       odummy<1> (PAD)
   Source Clock:      Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22_o_Mux_32_o falling
 
-  Data Path: Inst_procesor/Inst_CU/REG_SEL_0 to odummy<14>
+  Data Path: Inst_procesor/Inst_CU/REG_SEL_0 to odummy<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q             36   0.581   1.587  Inst_procesor/Inst_CU/REG_SEL_0 (Inst_procesor/Inst_CU/REG_SEL_0)
-     LUT2:I1->O           26   0.254   1.875  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_xor<1>11 (Inst_procesor/Inst_multiplekser/sSEL[3]_GND_15_o_add_2_OUT<1>)
-     LUT6:I0->O            2   0.254   0.834  Inst_procesor/Inst_multiplekser/Mmux_sSEL[3]_X_14_o_wide_mux_3_OUT_7 (Inst_procesor/Inst_multiplekser/Mmux_sSEL[3]_X_14_o_wide_mux_3_OUT_7)
-     LUT6:I4->O            1   0.250   0.682  Inst_procesor/Inst_multiplekser/Mmux_oData17 (Inst_procesor/Inst_multiplekser/Mmux_oData1)
-     LUT5:I4->O           10   0.254   1.007  Inst_procesor/Inst_multiplekser/Mmux_oData18 (odummy_0_OBUF)
-     OBUF:I->O                 2.912          odummy_0_OBUF (odummy<0>)
+     LDC:G->Q             34   0.581   1.553  Inst_procesor/Inst_CU/REG_SEL_0 (Inst_procesor/Inst_CU/REG_SEL_0)
+     LUT2:I1->O            8   0.254   1.399  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_xor<1>11 (Inst_procesor/Inst_multiplekser/sSEL[3]_GND_15_o_add_2_OUT<1>)
+     LUT6:I0->O            1   0.254   0.000  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_76 (Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_76)
+     MUXF7:I0->O           2   0.163   0.726  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_5_f7_5 (Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_5_f76)
+     LUT5:I4->O            6   0.254   0.875  Inst_procesor/Inst_multiplekser/Mmux_oData81 (odummy_1_OBUF)
+     OBUF:I->O                 2.912          odummy_1_OBUF (odummy<1>)
     ----------------------------------------
-    Total                     10.490ns (4.505ns logic, 5.985ns route)
-                                       (42.9% logic, 57.1% route)
+    Total                      8.971ns (4.418ns logic, 4.553ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iCLK'
+  Total number of paths / destination ports: 96 / 16
+-------------------------------------------------------------------------
+Offset:              6.918ns (Levels of Logic = 4)
+  Source:            Inst_RAM_mem/oDATA_8 (FF)
+  Destination:       odummy<14> (PAD)
+  Source Clock:      iCLK rising
+
+  Data Path: Inst_RAM_mem/oDATA_8 to odummy<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             17   0.525   1.209  Inst_RAM_mem/oDATA_8 (Inst_RAM_mem/oDATA_8)
+     LUT6:I5->O            1   0.254   0.000  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_7 (Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_7)
+     MUXF7:I0->O           2   0.163   0.726  Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_5_f7 (Inst_procesor/Inst_multiplekser/Madd_sSEL[3]_GND_15_o_add_2_OUT_cy<2>_5_f7)
+     LUT5:I4->O            6   0.254   0.875  Inst_procesor/Inst_multiplekser/Mmux_oData21 (odummy_10_OBUF)
+     OBUF:I->O                 2.912          odummy_10_OBUF (odummy<10>)
+    ----------------------------------------
+    Total                      6.918ns (4.108ns logic, 2.810ns route)
+                                       (59.4% logic, 40.6% route)
 
 =========================================================================
 
@@ -905,8 +983,8 @@ Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-iCLK           |         |         |    2.277|         |
-iRST           |         |         |    1.879|         |
+iCLK           |         |         |    2.229|         |
+iRST           |         |         |    1.847|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_60_o
@@ -914,7 +992,7 @@ Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-iCLK           |         |         |    1.918|         |
+iCLK           |         |         |    1.870|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_20_o_Mux_28_o
@@ -922,7 +1000,7 @@ Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_20
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-iCLK           |         |         |    2.382|         |
+iCLK           |         |         |    2.334|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22_o_Mux_32_o
@@ -930,8 +1008,8 @@ Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-iCLK           |         |         |    2.449|         |
-iRST           |         |         |    2.088|         |
+iCLK           |         |         |    2.401|         |
+iRST           |         |         |    2.056|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_28_o_Mux_44_o
@@ -939,7 +1017,7 @@ Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_28
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-iCLK           |         |         |    2.277|         |
+iCLK           |         |         |    2.229|         |
 iRST           |         |         |    1.597|         |
 ---------------+---------+---------+---------+---------+
 
@@ -948,8 +1026,8 @@ Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_37
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-iCLK           |         |         |    2.259|         |
-iRST           |         |         |    1.983|         |
+iCLK           |         |         |    2.233|         |
+iRST           |         |         |    1.951|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_39_o_Mux_66_o
@@ -957,7 +1035,7 @@ Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_39
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-iCLK           |         |         |    2.277|         |
+iCLK           |         |         |    2.229|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o
@@ -965,7 +1043,7 @@ Clock to Setup on destination clock Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-iCLK           |         |         |    2.259|         |
+iCLK           |         |         |    2.233|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock iCLK
@@ -973,17 +1051,17 @@ Clock to Setup on destination clock iCLK
                                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------------------------------------+---------+---------+---------+---------+
-Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_56_o|         |    3.262|         |         |
+Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_56_o|         |    3.122|         |         |
 Inst_procesor/Inst_CU/stateCurrent[1]_sINSTR_WORD[9]_Mux_60_o|         |    2.064|         |         |
 Inst_procesor/Inst_CU/stateCurrent[2]_PWR_19_o_Mux_26_o      |         |    2.785|         |         |
 Inst_procesor/Inst_CU/stateCurrent[2]_PWR_20_o_Mux_28_o      |         |    2.732|         |         |
-Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22_o_Mux_32_o      |         |    6.974|         |         |
-Inst_procesor/Inst_CU/stateCurrent[2]_PWR_28_o_Mux_44_o      |         |    3.538|         |         |
-Inst_procesor/Inst_CU/stateCurrent[2]_PWR_37_o_Mux_62_o      |         |    4.484|         |         |
-Inst_procesor/Inst_CU/stateCurrent[2]_PWR_39_o_Mux_66_o      |         |    5.052|         |         |
-Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o      |         |    5.215|         |         |
-iCLK                                                         |    4.030|         |         |         |
-iRST                                                         |    1.917|         |         |         |
+Inst_procesor/Inst_CU/stateCurrent[2]_PWR_22_o_Mux_32_o      |         |    5.982|         |         |
+Inst_procesor/Inst_CU/stateCurrent[2]_PWR_28_o_Mux_44_o      |         |    3.331|         |         |
+Inst_procesor/Inst_CU/stateCurrent[2]_PWR_37_o_Mux_62_o      |         |    4.343|         |         |
+Inst_procesor/Inst_CU/stateCurrent[2]_PWR_39_o_Mux_66_o      |         |    4.663|         |         |
+Inst_procesor/Inst_CU/stateCurrent[2]_PWR_41_o_Mux_70_o      |         |    4.492|         |         |
+iCLK                                                         |    3.719|         |         |         |
+iRST                                                         |    1.885|         |         |         |
 -------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock iRST
@@ -991,20 +1069,20 @@ Clock to Setup on destination clock iRST
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-iCLK           |    3.623|         |         |         |
+iCLK           |    3.509|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.13 secs
+Total CPU time to Xst completion: 6.12 secs
  
 --> 
 
-Total memory usage is 261488 kilobytes
+Total memory usage is 261360 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   49 (   0 filtered)
+Number of warnings :  121 (   0 filtered)
 Number of infos    :    8 (   0 filtered)
 

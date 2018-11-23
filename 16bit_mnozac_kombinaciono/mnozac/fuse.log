@@ -1,0 +1,38 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/mnozac/mul_tb_isim_beh.exe -prj D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/mnozac/mul_tb_beh.prj work.mul_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/mnozac/fullAdder.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/mnozac/nBitAdder.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/mnozac/MUL.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/mnozac/mul_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture dataflow of entity fullAdder [fulladder_default]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(2)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(3)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(4)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(5)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(6)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(7)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(8)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(9)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(10)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(11)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(12)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(13)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(14)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(15)\]
+Compiling architecture rtl of entity nBitAdder [\nBitAdder(16)\]
+Compiling architecture rtl of entity MUL [\MUL(16)\]
+Compiling architecture behavior of entity mul_tb
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 38 VHDL Units
+Built simulation executable D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/mnozac/mul_tb_isim_beh.exe
+Fuse Memory Usage: 36540 KB
+Fuse CPU Usage: 732 ms

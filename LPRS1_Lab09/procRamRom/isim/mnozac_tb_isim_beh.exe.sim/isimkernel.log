@@ -1,0 +1,28 @@
+Command line:
+   mnozac_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53137
+
+Fri Dec 14 14:55:44 2018
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 829.8 Meg
+
+ Total Signals          : 340
+ Total Nets             : 290
+ Total Signal Drivers   : 150
+ Total Blocks           : 57
+ Total Primitive Blocks : 22
+ Total Processes        : 139
+ Total Traceable Variables  : 58
+ Total Scalar Nets and Variables : 887
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 829.8 Meg
+
+Fri Dec 14 14:55:47 2018
+

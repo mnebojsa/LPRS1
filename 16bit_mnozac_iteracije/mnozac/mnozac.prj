@@ -1,0 +1,7 @@
+vhdl work "fullAdder.vhd"
+vhdl work "../../LPRS1_Lab09/procRamRom/command_list.vhd"
+vhdl work "ALCell.vhd"
+vhdl work "SH_REG.vhd"
+vhdl work "CPU.vhd"
+vhdl work "ALU.vhd"
+vhdl work "mnozac.vhd"

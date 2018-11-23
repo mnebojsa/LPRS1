@@ -1,0 +1,4 @@
+vhdl work "fullAdder.vhd"
+vhdl work "nBitAdder.vhd"
+vhdl work "MUL.vhd"
+vhdl work "mul_tb.vhd"

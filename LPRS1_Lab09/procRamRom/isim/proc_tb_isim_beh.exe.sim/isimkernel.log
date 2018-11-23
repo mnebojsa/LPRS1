@@ -1,0 +1,10 @@
+Command line:
+   proc_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53161
+
+Fri Dec 14 14:58:51 2018
+
+
+ Elaboration Time: 0.078001 sec

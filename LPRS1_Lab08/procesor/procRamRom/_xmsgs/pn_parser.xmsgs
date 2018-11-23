@@ -8,7 +8,37 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procRamRom/RAM_mem.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procRamRom/ROM_mem.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procRamRom/top_module.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/ALU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/CU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/DEC.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/cnt.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/multiplekser.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/mux_generics.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/procesor.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/register.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-23T10:38:30</DateModified>
+  <DateModified>2018-11-23T13:12:33</DateModified>
   <ModuleName>top_module</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procRamRom/iseconfig/top_module.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procRamRom</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procRamRom\</ImplementationReportsDirectory>
   <DateInitialized>2018-11-23T10:38:30</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

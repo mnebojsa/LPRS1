@@ -1,4 +1,0 @@
-#Forbid everithing except *vhd files
-*.*
-!*.vhd
-!*.xise

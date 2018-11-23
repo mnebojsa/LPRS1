@@ -1,0 +1,32 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/mnoyactb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/mnoyactb_beh.prj" "work.mnoyactb" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/fullAdder.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/../../LPRS1_Lab09/procRamRom/command_list.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/ALCell.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/SH_REG.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/CPU.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/ALU.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/mnozac.vhd" into library work
+Parsing VHDL file "D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/mnoyactb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package command_list
+Compiling architecture dataflow of entity fullAdder [fulladder_default]
+Compiling architecture dataflow of entity ALCell [alcell_default]
+Compiling architecture rtl of entity ALU [\ALU(16,2)\]
+Compiling architecture behavioral of entity SH_REG [\SH_REG(16)\]
+Compiling architecture behavioral of entity CPU [\CPU(2)\]
+Compiling architecture behavioral of entity mnozac [mnozac_default]
+Compiling architecture behavior of entity mnoyactb
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 17 VHDL Units
+Built simulation executable D:/LPRS1_git/LPRS1/16bit_mnozac_iteracije/mnozac/mnoyactb_isim_beh.exe
+Fuse Memory Usage: 35652 KB
+Fuse CPU Usage: 592 ms

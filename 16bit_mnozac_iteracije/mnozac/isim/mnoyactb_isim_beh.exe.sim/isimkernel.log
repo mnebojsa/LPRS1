@@ -1,0 +1,10 @@
+Command line:
+   mnoyactb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61443
+
+Wed Dec 12 14:03:28 2018
+
+
+ Elaboration Time: 0.062401 sec

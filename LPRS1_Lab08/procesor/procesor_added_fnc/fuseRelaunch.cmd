@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/SUB_data_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/LPRS1_Lab08/procesor/procesor/SUB_data_tb_beh.prj" "work.SUB_data_tb" 

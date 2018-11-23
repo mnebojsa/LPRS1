@@ -43,7 +43,8 @@ begin
 	                   "0000"  when "00",
       iFnc(2 downto 0) & '0'  when "01",
 	    '0' & iFnc(3 downto 1) when "10",
-		       iFnc(3 downto 0) when "11";		  
+		       iFnc(3 downto 0) when "11",
+				          "0000"  when others;		  
 
 end dataFlow;
 

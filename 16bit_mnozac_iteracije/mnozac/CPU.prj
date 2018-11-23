@@ -1,0 +1,2 @@
+vhdl work "../../LPRS1_Lab09/procRamRom/command_list.vhd"
+vhdl work "CPU.vhd"

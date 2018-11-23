@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/boliMeCuna/nBitAdder_tb_isim_beh.exe" -prj "D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/boliMeCuna/nBitAdder_tb_beh.prj" "work.nBitAdder_tb" 

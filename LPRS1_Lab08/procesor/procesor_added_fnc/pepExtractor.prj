@@ -1,0 +1,8 @@
+work	"ALU.vhd"
+work	"CU.vhd"
+work	"DEC.vhd"
+work	"cnt.vhd"
+work	"multiplekser.vhd"
+work	"mux_generics.vhd"
+work	"procesor.vhd"
+work	"register.vhd"

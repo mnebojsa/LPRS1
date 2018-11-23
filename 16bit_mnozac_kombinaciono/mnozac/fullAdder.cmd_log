@@ -1,0 +1,1 @@
+vhdtdtfi -prj mnozac -o D:/LPRS1_git/LPRS1/16bit_mnozac_kombinaciono/mnozac/fullAdder.vhi -module fullAdder -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work fullAdder.vhd 

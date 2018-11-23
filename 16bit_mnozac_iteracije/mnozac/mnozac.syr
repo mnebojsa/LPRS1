@@ -1,0 +1,510 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: mnozac.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mnozac.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mnozac"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-fgg676
+
+---- Source Options
+Top Module Name                    : mnozac
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\fullAdder.vhd" into library work
+Parsing entity <fullAdder>.
+Parsing architecture <dataFlow> of entity <fulladder>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\LPRS1_Lab09\procRamRom\command_list.vhd" into library work
+Parsing package <command_list>.
+Parsing package body <command_list>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\ALCell.vhd" into library work
+Parsing entity <ALCell>.
+Parsing architecture <dataFlow> of entity <alcell>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\SH_REG.vhd" into library work
+Parsing entity <SH_REG>.
+Parsing architecture <Behavioral> of entity <sh_reg>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\CPU.vhd" into library work
+Parsing entity <CPU>.
+Parsing architecture <Behavioral> of entity <cpu>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <RTL> of entity <alu>.
+Parsing VHDL file "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\mnozac.vhd" into library work
+Parsing entity <mnozac>.
+Parsing architecture <Behavioral> of entity <mnozac>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <mnozac> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <ALCell> (architecture <dataFlow>) from library <work>.
+
+Elaborating entity <fullAdder> (architecture <dataFlow>) from library <work>.
+
+Elaborating entity <SH_REG> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <CPU> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\CPU.vhd" Line 103. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\CPU.vhd" Line 154. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mnozac>.
+    Related source file is "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\mnozac.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mnozac> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\ALU.vhd".
+        bus_width = 16
+        selSigNum = 2
+    Found 4x1-bit Read Only RAM for signal <sCarry<0>>
+    Summary:
+	inferred   1 RAM(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <ALCell>.
+    Related source file is "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\ALCell.vhd".
+    Found 1-bit 3-to-1 multiplexer for signal <oFnc> created at line 79.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <ALCell> synthesized.
+
+Synthesizing Unit <fullAdder>.
+    Related source file is "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\fullAdder.vhd".
+    Summary:
+Unit <fullAdder> synthesized.
+
+Synthesizing Unit <SH_REG>.
+    Related source file is "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\SH_REG.vhd".
+        bus_width = 16
+    Found 16-bit register for signal <sData>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <SH_REG> synthesized.
+
+Synthesizing Unit <CPU>.
+    Related source file is "D:\LPRS1_git\LPRS1\16bit_mnozac_iteracije\mnozac\CPU.vhd".
+        selSigNum = 2
+    Found 5-bit register for signal <sCnt>.
+    Found 2-bit register for signal <stateCurrent>.
+    Found finite state machine <FSM_0> for signal <stateCurrent>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | iCLK (rising_edge)                             |
+    | Reset              | iRST (positive)                                |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit subtractor for signal <GND_10_o_GND_10_o_sub_19_OUT<4:0>> created at line 169.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <CPU> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x1-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 3
+ 16-bit register                                       : 2
+ 5-bit register                                        : 1
+# Multiplexers                                         : 70
+ 1-bit 2-to-1 multiplexer                              : 50
+ 1-bit 3-to-1 multiplexer                              : 16
+ 16-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ALU>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_sCarry<0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <iSel>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sCarry>        |          |
+    -----------------------------------------------------------------------
+Unit <ALU> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x1-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 5-bit subtractor                                      : 1
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+# Multiplexers                                         : 83
+ 1-bit 2-to-1 multiplexer                              : 65
+ 1-bit 3-to-1 multiplexer                              : 16
+ 5-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Inst_CPU/FSM_0> on signal <stateCurrent[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ shg0  | 11
+ shg   | 01
+ add   | 10
+-------------------
+
+Optimizing unit <mnozac> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <SH_REG> ...
+
+Optimizing unit <CPU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mnozac, actual ratio is 0.
+FlipFlop Inst_CPU/stateCurrent_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop Inst_CPU/stateCurrent_FSM_FFd2 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mnozac.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 117
+#      LUT2                        : 8
+#      LUT3                        : 6
+#      LUT4                        : 9
+#      LUT5                        : 31
+#      LUT6                        : 55
+#      MUXF7                       : 8
+# FlipFlops/Latches                : 43
+#      FDE                         : 5
+#      FDR                         : 6
+#      FDRE                        : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 68
+#      IBUF                        : 36
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45fgg676-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              43  out of  54576     0%  
+ Number of Slice LUTs:                  109  out of  27288     0%  
+    Number used as Logic:               109  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    113
+   Number with an unused Flip Flop:      70  out of    113    61%  
+   Number with an unused LUT:             4  out of    113     3%  
+   Number of fully used LUT-FF pairs:    39  out of    113    34%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          69
+ Number of bonded IOBs:                  69  out of    358    19%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+iCLK                               | BUFGP                  | 43    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.432ns (Maximum Frequency: 184.094MHz)
+   Minimum input arrival time before clock: 6.342ns
+   Maximum output required time after clock: 4.618ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iCLK'
+  Clock period: 5.432ns (frequency: 184.094MHz)
+  Total number of paths / destination ports: 659 / 80
+-------------------------------------------------------------------------
+Delay:               5.432ns (Levels of Logic = 4)
+  Source:            Inst_CPU/stateCurrent_FSM_FFd2_2 (FF)
+  Destination:       Inst_SH_REG_G1/sData_6 (FF)
+  Source Clock:      iCLK rising
+  Destination Clock: iCLK rising
+
+  Data Path: Inst_CPU/stateCurrent_FSM_FFd2_2 to Inst_SH_REG_G1/sData_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   0.994  Inst_CPU/stateCurrent_FSM_FFd2_2 (Inst_CPU/stateCurrent_FSM_FFd2_2)
+     LUT4:I1->O            3   0.235   0.994  Inst_ALU/GEN_ALCell[1].ALC/Mmux_siC11 (Inst_ALU/GEN_ALCell[1].ALC/siC)
+     LUT6:I3->O            9   0.235   1.204  Inst_ALU/GEN_ALCell[5].ALC/Mmux_siC11 (Inst_ALU/GEN_ALCell[5].ALC/siC)
+     LUT6:I3->O            1   0.235   0.682  Inst_SH_REG_G1/mux1211_G (N119)
+     LUT3:I2->O            1   0.254   0.000  Inst_SH_REG_G1/mux12111 (Inst_SH_REG_G1/sData[15]_iData[15]_mux_1_OUT<6>)
+     FDRE:D                    0.074          Inst_SH_REG_G1/sData_6
+    ----------------------------------------
+    Total                      5.432ns (1.558ns logic, 3.874ns route)
+                                       (28.7% logic, 71.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'iCLK'
+  Total number of paths / destination ports: 389 / 108
+-------------------------------------------------------------------------
+Offset:              6.342ns (Levels of Logic = 5)
+  Source:            iA<3> (PAD)
+  Destination:       Inst_SH_REG_G1/sData_6 (FF)
+  Destination Clock: iCLK rising
+
+  Data Path: iA<3> to Inst_SH_REG_G1/sData_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   1.271  iA_3_IBUF (iA_3_IBUF)
+     LUT6:I1->O            1   0.254   0.790  Inst_ALU/GEN_ALCell[3].ALC/Mmux_siC11_SW0 (N18)
+     LUT6:I4->O            9   0.250   1.204  Inst_ALU/GEN_ALCell[5].ALC/Mmux_siC11 (Inst_ALU/GEN_ALCell[5].ALC/siC)
+     LUT6:I3->O            1   0.235   0.682  Inst_SH_REG_G1/mux1211_G (N119)
+     LUT3:I2->O            1   0.254   0.000  Inst_SH_REG_G1/mux12111 (Inst_SH_REG_G1/sData[15]_iData[15]_mux_1_OUT<6>)
+     FDRE:D                    0.074          Inst_SH_REG_G1/sData_6
+    ----------------------------------------
+    Total                      6.342ns (2.395ns logic, 3.947ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iCLK'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.618ns (Levels of Logic = 1)
+  Source:            Inst_SH_REG_G1/sData_9 (FF)
+  Destination:       oRes<25> (PAD)
+  Source Clock:      iCLK rising
+
+  Data Path: Inst_SH_REG_G1/sData_9 to oRes<25>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            16   0.525   1.181  Inst_SH_REG_G1/sData_9 (Inst_SH_REG_G1/sData_9)
+     OBUF:I->O                 2.912          oRes_25_OBUF (oRes<25>)
+    ----------------------------------------
+    Total                      4.618ns (3.437ns logic, 1.181ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock iCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iCLK           |    5.432|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.44 secs
+ 
+--> 
+
+Total memory usage is 260600 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

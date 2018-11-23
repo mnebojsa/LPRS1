@@ -1,2 +1,4 @@
 work	"ALCell.vhd"
+work	"ALU.vhd"
 work	"fullAdder.vhd"
+work	"shift.vhd"
